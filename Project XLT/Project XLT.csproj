@@ -1,0 +1,34 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net6.0-windows</TargetFramework>
+    <RootNamespace>Project_XLT</RootNamespace>
+    <Nullable>enable</Nullable>
+    <UseWPF>true</UseWPF>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="Images\ExitIcon.png" />
+    <None Remove="Images\MainMenuIcon.png" />
+    <None Remove="Images\NutritionIcon.png" />
+    <None Remove="Images\SettingsIcon.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="MVVM\Model\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.Extensions.DependencyInjection" Version="8.0.0" />
+    <PackageReference Include="Microsoft.Xaml.Behaviors.Wpf" Version="1.1.77" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="Images\ExitIcon.png" />
+    <Resource Include="Images\MainMenuIcon.png" />
+    <Resource Include="Images\NutritionIcon.png" />
+    <Resource Include="Images\SettingsIcon.png" />
+  </ItemGroup>
+
+</Project>

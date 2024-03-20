@@ -1,0 +1,12 @@
+{
+  "version": 2,
+  "dgSpecHash": "OOQvN9v6aXy2oHl8hS64dCIIQXCGNM67jTUyid5nnbkbcow1f/ujp2paS+ZUKNEiNRZqtI2k/yqrO6egLYsRNQ==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\Artyom\\source\\repos\\Project XLT\\Project XLT\\Project XLT.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Artyom\\.nuget\\packages\\microsoft.extensions.dependencyinjection\\8.0.0\\microsoft.extensions.dependencyinjection.8.0.0.nupkg.sha512",
+    "C:\\Users\\Artyom\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\8.0.0\\microsoft.extensions.dependencyinjection.abstractions.8.0.0.nupkg.sha512",
+    "C:\\Users\\Artyom\\.nuget\\packages\\microsoft.xaml.behaviors.wpf\\1.1.77\\microsoft.xaml.behaviors.wpf.1.1.77.nupkg.sha512"
+  ],
+  "logs": []
+}

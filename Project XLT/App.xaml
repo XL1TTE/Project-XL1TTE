@@ -1,0 +1,30 @@
+﻿<Application x:Class="Project_XLT.App"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:local="clr-namespace:Project_XLT"
+             xmlns:views="clr-namespace:Project_XLT.MVVM.View"
+             xmlns:vms="clr-namespace:Project_XLT.MVVM.ViewModels">
+    <Application.Resources>
+
+        <ResourceDictionary>
+
+            <DataTemplate DataType="{x:Type vms:MainWindowViewModel}">
+                <views:MainWindow />
+            </DataTemplate>
+
+            <DataTemplate DataType="{x:Type vms:NutritionViewModel}">
+                <views:NutritionView />
+            </DataTemplate>
+
+            <DataTemplate DataType="{x:Type vms:MainMenuViewModel}">
+                <views:MainMenuView />
+            </DataTemplate>
+
+            <ResourceDictionary.MergedDictionaries>
+                <ResourceDictionary Source="Styles/NavigationPanelStyles.xaml"/>
+            </ResourceDictionary.MergedDictionaries>
+        </ResourceDictionary>
+
+
+    </Application.Resources>
+</Application>

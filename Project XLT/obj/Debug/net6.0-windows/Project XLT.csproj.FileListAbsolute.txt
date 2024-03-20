@@ -1,0 +1,34 @@
+C:\Users\Artyom\source\repos\Project XLT\Project XLT\obj\Debug\net6.0-windows\MVVM\View\MainWindow.g.cs
+C:\Users\Artyom\source\repos\Project XLT\Project XLT\obj\Debug\net6.0-windows\App.g.cs
+C:\Users\Artyom\source\repos\Project XLT\Project XLT\obj\Debug\net6.0-windows\Project XLT_MarkupCompile.cache
+C:\Users\Artyom\source\repos\Project XLT\Project XLT\obj\Debug\net6.0-windows\Project XLT_MarkupCompile.lref
+C:\Users\Artyom\source\repos\Project XLT\Project XLT\obj\Debug\net6.0-windows\MVVM\View\MainWindow.baml
+C:\Users\Artyom\source\repos\Project XLT\Project XLT\obj\Debug\net6.0-windows\Project XLT.dll
+C:\Users\Artyom\source\repos\Project XLT\Project XLT\obj\Debug\net6.0-windows\refint\Project XLT.dll
+C:\Users\Artyom\source\repos\Project XLT\Project XLT\obj\Debug\net6.0-windows\Project XLT.pdb
+C:\Users\Artyom\source\repos\Project XLT\Project XLT\bin\Debug\net6.0-windows\Project XLT.exe
+C:\Users\Artyom\source\repos\Project XLT\Project XLT\bin\Debug\net6.0-windows\Project XLT.deps.json
+C:\Users\Artyom\source\repos\Project XLT\Project XLT\bin\Debug\net6.0-windows\Project XLT.runtimeconfig.json
+C:\Users\Artyom\source\repos\Project XLT\Project XLT\bin\Debug\net6.0-windows\Project XLT.dll
+C:\Users\Artyom\source\repos\Project XLT\Project XLT\bin\Debug\net6.0-windows\Project XLT.pdb
+C:\Users\Artyom\source\repos\Project XLT\Project XLT\obj\Debug\net6.0-windows\Project XLT.g.resources
+C:\Users\Artyom\source\repos\Project XLT\Project XLT\obj\Debug\net6.0-windows\Project XLT.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Artyom\source\repos\Project XLT\Project XLT\obj\Debug\net6.0-windows\Project XLT.AssemblyInfoInputs.cache
+C:\Users\Artyom\source\repos\Project XLT\Project XLT\obj\Debug\net6.0-windows\Project XLT.AssemblyInfo.cs
+C:\Users\Artyom\source\repos\Project XLT\Project XLT\obj\Debug\net6.0-windows\Project XLT.csproj.CoreCompileInputs.cache
+C:\Users\Artyom\source\repos\Project XLT\Project XLT\obj\Debug\net6.0-windows\Project XLT.genruntimeconfig.cache
+C:\Users\Artyom\source\repos\Project XLT\Project XLT\obj\Debug\net6.0-windows\ref\Project XLT.dll
+C:\Users\Artyom\source\repos\Project XLT\Project XLT\obj\Debug\net6.0-windows\GeneratedInternalTypeHelper.g.cs
+C:\Users\Artyom\source\repos\Project XLT\Project XLT\bin\Debug\net6.0-windows\Microsoft.Extensions.DependencyInjection.dll
+C:\Users\Artyom\source\repos\Project XLT\Project XLT\bin\Debug\net6.0-windows\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+C:\Users\Artyom\source\repos\Project XLT\Project XLT\obj\Debug\net6.0-windows\Project XLT.csproj.AssemblyReference.cache
+C:\Users\Artyom\source\repos\Project XLT\Project XLT\obj\Debug\net6.0-windows\Project XLT.csproj.CopyComplete
+C:\Users\Artyom\source\repos\Project XLT\Project XLT\obj\Debug\net6.0-windows\MVVM\View\NutritionView.g.cs
+C:\Users\Artyom\source\repos\Project XLT\Project XLT\obj\Debug\net6.0-windows\App.baml
+C:\Users\Artyom\source\repos\Project XLT\Project XLT\obj\Debug\net6.0-windows\MVVM\View\NutritionView.baml
+C:\Users\Artyom\source\repos\Project XLT\Project XLT\obj\Debug\net6.0-windows\MVVM\View\MainMenuView.g.cs
+C:\Users\Artyom\source\repos\Project XLT\Project XLT\obj\Debug\net6.0-windows\MVVM\View\MainMenuView.baml
+C:\Users\Artyom\source\repos\Project XLT\Project XLT\obj\Debug\net6.0-windows\Styles\NavigationPanelStyles.baml
+C:\Users\Artyom\source\repos\Project XLT\Project XLT\obj\Debug\net6.0-windows\Components\NavigationPanel.g.cs
+C:\Users\Artyom\source\repos\Project XLT\Project XLT\obj\Debug\net6.0-windows\Components\NavigationPanel.baml
+C:\Users\Artyom\source\repos\Project XLT\Project XLT\bin\Debug\net6.0-windows\Microsoft.Xaml.Behaviors.dll
