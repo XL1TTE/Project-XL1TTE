@@ -22,7 +22,9 @@
 
             <ResourceDictionary.MergedDictionaries>
                 <ResourceDictionary Source="Styles/NavigationPanelStyles.xaml"/>
+                <ResourceDictionary Source="Styles/ResizerStyle.xaml"/>
             </ResourceDictionary.MergedDictionaries>
+
         </ResourceDictionary>
 
 

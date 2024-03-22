@@ -10,6 +10,9 @@
     <Compile Update="Components\NavigationPanel.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Update="Components\ResizeBox.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Update="MVVM\View\MainMenuView.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
@@ -19,6 +22,9 @@
   </ItemGroup>
   <ItemGroup>
     <Page Update="Components\NavigationPanel.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Components\ResizeBox.xaml">
       <SubType>Designer</SubType>
     </Page>
     <Page Update="MVVM\View\MainMenuView.xaml">
@@ -31,6 +37,9 @@
       <SubType>Designer</SubType>
     </Page>
     <Page Update="Styles\NavigationPanelStyles.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Styles\ResizerStyle.xaml">
       <SubType>Designer</SubType>
     </Page>
   </ItemGroup>

@@ -29,7 +29,6 @@ namespace Project_XLT.MVVM.ViewModels
         public MainWindowViewModel(InavigationService navigation)
         {
             Navigation = navigation;
-
             NavigateToNutrition = new RelayCommand(o => { Navigation.NavigateTo<NutritionViewModel>(); }, o => true);
             NavigateToMainMenu = new RelayCommand(o => { Navigation.NavigateTo <MainMenuViewModel>(); }, o => true);
             ExitCommand = new RelayCommand(o => { Application.Current.Shutdown(); }, o=> true);
