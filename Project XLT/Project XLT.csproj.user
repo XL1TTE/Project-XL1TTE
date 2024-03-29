@@ -10,6 +10,15 @@
     <Compile Update="Components\NavigationPanel.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Update="Components\NutritionStatPanel.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Components\NutritionTitlePanel.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Components\NutritionUserPanel.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Update="Components\ResizeBox.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
@@ -22,6 +31,15 @@
   </ItemGroup>
   <ItemGroup>
     <Page Update="Components\NavigationPanel.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Components\NutritionStatPanel.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Components\NutritionTitlePanel.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Components\NutritionUserPanel.xaml">
       <SubType>Designer</SubType>
     </Page>
     <Page Update="Components\ResizeBox.xaml">

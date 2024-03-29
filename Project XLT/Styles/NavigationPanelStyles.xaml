@@ -20,6 +20,7 @@
                                        Margin="15 0 0 0"/>
                                 <TextBlock Text="{TemplateBinding Property=Content}"
                                        Foreground="{TemplateBinding Property=Foreground}"
+                                       Style="{StaticResource NunitoFontStyle}"
                                        VerticalAlignment="Center"
                                        HorizontalAlignment="Left"
                                        Margin="25 0 0 0"/>

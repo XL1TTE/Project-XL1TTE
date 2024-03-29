@@ -6,9 +6,10 @@
              xmlns:local="clr-namespace:Project_XLT.Components"
              xmlns:cc="clr-namespace:Project_XLT.CustomControls"
              mc:Ignorable="d" 
+             x:Name="this"
              d:DesignHeight="450" d:DesignWidth="800"
              >
-    <Grid MinHeight="450" MinWidth="800" Height="450" Width="800">
+    <Grid Height="auto" Width="auto" >
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="7"/>
             <ColumnDefinition Width="*"/>
@@ -26,7 +27,7 @@
         <cc:Resizer Grid.Column="1" Grid.Row="0"
                     Background="Yellow"
                     ResizerDirection="Top"
-                    Cursor="SizeNS"/>
+                    Cursor="Hand"/>
         
         <cc:Resizer Grid.Column="1" Grid.Row="3"
                     Background="Orange"
@@ -38,19 +39,19 @@
                     ResizerDirection="Right"
                     Cursor="SizeWE"/>
         <cc:Resizer Grid.Row="0" Grid.Column="2"
-                    Background="Transparent" 
+                    Background="red" 
                     ResizerDirection="TopRight"
                     Cursor="SizeNESW"/>
         <cc:Resizer Grid.Row="2" Grid.Column="0"
-                    Background="Aqua"
+                    Background="red"
                     ResizerDirection="BottomLeft"
                     Cursor="SizeNESW"/>
         <cc:Resizer Grid.Row="2" Grid.Column="2"
-                    Background="Transparent" 
+                    Background="red" 
                     ResizerDirection="BottomRight"
                     Cursor="SizeNWSE"/>
         <cc:Resizer Grid.Row="0" Grid.Column="0"
-                    Background="Transparent" 
+                    Background="red" 
                     ResizerDirection="TopLeft"
                     Cursor="SizeNWSE"/>
     </Grid>

@@ -18,25 +18,25 @@
             </Grid>
             <Grid Grid.Row="1">
                 <StackPanel>
-                    <RadioButton Content="Main" 
+                    <RadioButton Content="Главная" 
                              Height="30"
                              Margin="10"
                              Tag="/Images/MainMenuIcon.png"
                              IsChecked="True"
                              Command="{Binding NavigateToMainMenu}"
                              Style="{StaticResource NavigationPanelButtonStyle}"/>
-                    <RadioButton Content="Nutrition" 
+                    <RadioButton Content="Питание" 
                              Height="30"
                              Margin="10"
                              Tag="/Images/NutritionIcon.png"
                              Command="{Binding NavigateToNutrition}"
                              Style="{StaticResource NavigationPanelButtonStyle}"/>
-                    <RadioButton Content="Settings" 
+                    <RadioButton Content="Настройки" 
                              Height="30"
                              Margin="10"
                              Tag="/Images/SettingsIcon.png"
                              Style="{StaticResource NavigationPanelButtonStyle}"/>
-                    <RadioButton Content="Exit" 
+                    <RadioButton Content="Выход" 
                              Height="30"
                              Margin="10"
                              Tag="/Images/ExitIcon.png"

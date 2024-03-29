@@ -8,8 +8,8 @@
         xmlns:b="http://schemas.microsoft.com/xaml/behaviors"
         mc:Ignorable="d"
         Title="MainWindow" 
-        Height="auto" Width="auto"
-        MinHeight="450" MinWidth="800"
+        Height="720" Width="1200"
+        MinHeight="720" MinWidth="1200"
         SizeToContent="WidthAndHeight"
         AllowsTransparency="True"
         Background="Transparent"
@@ -17,7 +17,7 @@
         x:Name="Window" 
         MouseDown="Window_MouseDown"
         >
-    <Grid >
+    <Grid>
         <components:ResizeBox Panel.ZIndex="1"/>
         <Border Background="LightGray" CornerRadius="15" Margin="2">
 
@@ -27,7 +27,7 @@
                         <ColumnDefinition Width="180"/>
                         <ColumnDefinition />
                     </Grid.ColumnDefinitions>
-                    
+
                     <Grid Grid.Column="0">
                         <components:NavigationPanel/>
                     </Grid>
@@ -36,13 +36,10 @@
                         <ContentControl Content="{Binding Navigation.CurrentViewModel}"/>
                     </Grid>
                 </Grid>
-            
-
-
-
 
             </Grid>
 
         </Border>
+
     </Grid>
 </Window>

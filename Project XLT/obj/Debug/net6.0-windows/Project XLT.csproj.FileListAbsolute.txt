@@ -35,3 +35,9 @@ C:\Users\Artyom\source\repos\Project XLT\Project XLT\bin\Debug\net6.0-windows\Mi
 C:\Users\Artyom\source\repos\Project XLT\Project XLT\obj\Debug\net6.0-windows\Styles\ResizerStyle.baml
 C:\Users\Artyom\source\repos\Project XLT\Project XLT\obj\Debug\net6.0-windows\Components\ResizeBox.g.cs
 C:\Users\Artyom\source\repos\Project XLT\Project XLT\obj\Debug\net6.0-windows\Components\ResizeBox.baml
+C:\Users\Artyom\source\repos\Project XLT\Project XLT\obj\Debug\net6.0-windows\Components\NutritionTitlePanel.g.cs
+C:\Users\Artyom\source\repos\Project XLT\Project XLT\obj\Debug\net6.0-windows\Components\NutritionTitlePanel.baml
+C:\Users\Artyom\source\repos\Project XLT\Project XLT\obj\Debug\net6.0-windows\Components\NutritionUserPanel.g.cs
+C:\Users\Artyom\source\repos\Project XLT\Project XLT\obj\Debug\net6.0-windows\Components\NutritionUserPanel.baml
+C:\Users\Artyom\source\repos\Project XLT\Project XLT\obj\Debug\net6.0-windows\Components\NutritionStatPanel.g.cs
+C:\Users\Artyom\source\repos\Project XLT\Project XLT\obj\Debug\net6.0-windows\Components\NutritionStatPanel.baml

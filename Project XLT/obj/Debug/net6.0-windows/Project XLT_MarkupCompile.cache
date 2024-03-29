@@ -10,11 +10,11 @@ none
 false
 TRACE;DEBUG;NET;NET6_0;NETCOREAPP
 C:\Users\Artyom\source\repos\Project XLT\Project XLT\App.xaml
-7-1027965620
+101298294896
 
-15-1674552232
+18-2036254378
 197-48739708
-Components\NavigationPanel.xaml;Components\ResizeBox.xaml;MVVM\View\MainMenuView.xaml;MVVM\View\MainWindow.xaml;MVVM\View\NutritionView.xaml;Styles\NavigationPanelStyles.xaml;Styles\ResizerStyle.xaml;
+Components\NavigationPanel.xaml;Components\NutritionStatPanel.xaml;Components\NutritionTitlePanel.xaml;Components\NutritionUserPanel.xaml;Components\ResizeBox.xaml;MVVM\View\MainMenuView.xaml;MVVM\View\MainWindow.xaml;MVVM\View\NutritionView.xaml;Styles\NavigationPanelStyles.xaml;Styles\ResizerStyle.xaml;
 
 False
 

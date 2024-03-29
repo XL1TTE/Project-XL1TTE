@@ -50,7 +50,7 @@ namespace Project_XLT.CustomControls
                         ResizeBottom(ItemToResize, e);
                         break;
                     case ResizerDirections.Top:
-                        ResizeTop(ItemToResize, e);
+                        DragWindow();
                         break;
                     case ResizerDirections.Left:
                         ResizeLeft(ItemToResize, e);
@@ -77,43 +77,52 @@ namespace Project_XLT.CustomControls
 
         private static void ResizeBottom(Grid Target, DragDeltaEventArgs e)
         {
+            Window mw = App.Current.MainWindow;
+
             double deltaVertical;
             Point GetMousePos() => Mouse.GetPosition(Target);
-            deltaVertical = GetMousePos().Y;
-            if(deltaVertical > Target.MinHeight)
+            deltaVertical = GetMousePos().Y + 7;
+            if(deltaVertical > mw.MinHeight)
                 Target.Height = deltaVertical;
         }
         private static void ResizeTop(Grid Target, DragDeltaEventArgs e)
         {
             Window mw = App.Current.MainWindow;
+            Target.Height = Target.ActualHeight;
+
             double deltaVertical;
             Point GetMousePos() => Mouse.GetPosition(Target);
-            deltaVertical = GetMousePos().Y;
-            if ((Target.Height - deltaVertical) > Target.MinHeight)
+            deltaVertical = GetMousePos().Y - 7;
+            if ((Target.ActualHeight - deltaVertical) > mw.MinHeight)
             {
                 mw.Top += deltaVertical;
                 Target.Height -= deltaVertical;
             }
+
         }
         private static void ResizeLeft(Grid Target, DragDeltaEventArgs e)
         {
             Window mw = App.Current.MainWindow;
+            Target.Width = Target.ActualWidth;
             double deltaHorisontal;
             Point GetMousePos() => Mouse.GetPosition(Target);
-            deltaHorisontal = GetMousePos().X;
-            if ((Target.Width - deltaHorisontal) > Target.MinWidth)
+            deltaHorisontal = GetMousePos().X - 7;
+            if ((Target.ActualWidth - deltaHorisontal) > mw.MinWidth)
             {
                 mw.Left += deltaHorisontal;
+
                 Target.Width -= deltaHorisontal;
             }
 
         }
         private static void ResizeRight(Grid Target, DragDeltaEventArgs e)
         {
+            Window mw = App.Current.MainWindow;
+
             double deltaHorisontal;
             Point GetMousePos() => Mouse.GetPosition(Target);
-            deltaHorisontal = GetMousePos().X;
-            if (deltaHorisontal > Target.MinWidth)
+            deltaHorisontal = GetMousePos().X + 7;
+            if (deltaHorisontal > mw.MinWidth)
                 Target.Width = deltaHorisontal;
         }
 
@@ -138,6 +147,13 @@ namespace Project_XLT.CustomControls
             ResizeRight(Target, e);
         }
 
+        private static void DragWindow()
+        {
+            while (Mouse.LeftButton == MouseButtonState.Pressed)
+            {
+                App.Current.MainWindow.DragMove();
+            }
+        }
 
         public enum ResizerDirections
         {
