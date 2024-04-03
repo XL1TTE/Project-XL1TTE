@@ -35,12 +35,16 @@
                         Value="/Fonts/#Nunito Font" />
                     </Style>
                 </ResourceDictionary>
-
+                <!--Styles-->
+                <ResourceDictionary Source="Styles/ProgressBarStyle.xaml" />
                 <ResourceDictionary Source="Styles/NavigationPanelStyles.xaml"/>
                 <ResourceDictionary Source="Styles/ResizerStyle.xaml"/>
+                <ResourceDictionary Source="Styles/LProgressBarStyle.xaml"/>
+                
+                
             </ResourceDictionary.MergedDictionaries>
 
-
+            
 
         </ResourceDictionary>
 

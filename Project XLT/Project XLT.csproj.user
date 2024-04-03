@@ -54,10 +54,19 @@
     <Page Update="MVVM\View\NutritionView.xaml">
       <SubType>Designer</SubType>
     </Page>
+    <Page Update="Styles\LProgressBarStyle.xaml">
+      <SubType>Designer</SubType>
+    </Page>
     <Page Update="Styles\NavigationPanelStyles.xaml">
       <SubType>Designer</SubType>
     </Page>
+    <Page Update="Styles\ProgressBarStyle.xaml">
+      <SubType>Designer</SubType>
+    </Page>
     <Page Update="Styles\ResizerStyle.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Themes\Generic.xaml">
       <SubType>Designer</SubType>
     </Page>
   </ItemGroup>
