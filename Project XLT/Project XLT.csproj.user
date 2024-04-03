@@ -10,6 +10,18 @@
     <Compile Update="Components\NavigationPanel.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Update="Components\NutritionStatPanel.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Components\NutritionTitlePanel.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Components\NutritionUserPanel.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Components\ResizeBox.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Update="MVVM\View\MainMenuView.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
@@ -21,6 +33,18 @@
     <Page Update="Components\NavigationPanel.xaml">
       <SubType>Designer</SubType>
     </Page>
+    <Page Update="Components\NutritionStatPanel.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Components\NutritionTitlePanel.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Components\NutritionUserPanel.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Components\ResizeBox.xaml">
+      <SubType>Designer</SubType>
+    </Page>
     <Page Update="MVVM\View\MainMenuView.xaml">
       <SubType>Designer</SubType>
     </Page>
@@ -30,7 +54,19 @@
     <Page Update="MVVM\View\NutritionView.xaml">
       <SubType>Designer</SubType>
     </Page>
+    <Page Update="Styles\LProgressBarStyle.xaml">
+      <SubType>Designer</SubType>
+    </Page>
     <Page Update="Styles\NavigationPanelStyles.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Styles\ProgressBarStyle.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Styles\ResizerStyle.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Themes\Generic.xaml">
       <SubType>Designer</SubType>
     </Page>
   </ItemGroup>
