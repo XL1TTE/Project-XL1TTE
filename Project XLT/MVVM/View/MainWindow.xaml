@@ -7,26 +7,39 @@
         xmlns:components="clr-namespace:Project_XLT.Components"
         xmlns:b="http://schemas.microsoft.com/xaml/behaviors"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800"
+        Title="MainWindow" 
+        Height="720" Width="1200"
+        MinHeight="720" MinWidth="1200"
+        SizeToContent="WidthAndHeight"
         AllowsTransparency="True"
         Background="Transparent"
-        WindowStyle="None"
-        MouseDown="Window_MouseDown">
-    <Border Background="LightGray" CornerRadius="15">
-        <Grid>
-            <Grid.ColumnDefinitions>
-                <ColumnDefinition Width="180"/>
-                <ColumnDefinition Width="*"/>
-            </Grid.ColumnDefinitions>
-            
-            <Grid Grid.Column="1" Margin="10">
-                <ContentControl Content="{Binding Navigation.CurrentViewModel}"/>
+        WindowStyle="None"  
+        x:Name="Window" 
+        MouseDown="Window_MouseDown"
+        >
+    <Grid>
+        <components:ResizeBox Panel.ZIndex="1"/>
+        <Border Background="LightGray" CornerRadius="15" Margin="2">
+
+            <Grid Margin="3">
+                <Grid Grid.Row="1" Grid.Column="1" Margin="3">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="180"/>
+                        <ColumnDefinition />
+                    </Grid.ColumnDefinitions>
+
+                    <Grid Grid.Column="0">
+                        <components:NavigationPanel/>
+                    </Grid>
+
+                    <Grid Grid.Column="1">
+                        <ContentControl Content="{Binding Navigation.CurrentViewModel}"/>
+                    </Grid>
+                </Grid>
+
             </Grid>
 
-            <Grid Grid.Column="0">
-                <components:NavigationPanel Margin="5"/>
-            </Grid>
-        </Grid> 
+        </Border>
 
-    </Border>
+    </Grid>
 </Window>

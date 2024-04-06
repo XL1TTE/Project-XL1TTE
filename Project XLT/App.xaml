@@ -21,8 +21,31 @@
             </DataTemplate>
 
             <ResourceDictionary.MergedDictionaries>
+                <!-- Fonts -->
+                <ResourceDictionary>
+                    <Style 
+                        x:Key="OnestFontStyle">
+                        <Setter Property="TextElement.FontFamily" 
+                        Value="/Fonts/#Onest Font" />
+                    </Style>
+
+                    <Style 
+                        x:Key="NunitoFontStyle">
+                        <Setter Property="TextElement.FontFamily" 
+                        Value="/Fonts/#Nunito Font" />
+                    </Style>
+                </ResourceDictionary>
+                <!--Styles-->
+                <ResourceDictionary Source="Styles/ProgressBarStyle.xaml" />
                 <ResourceDictionary Source="Styles/NavigationPanelStyles.xaml"/>
+                <ResourceDictionary Source="Styles/ResizerStyle.xaml"/>
+                <ResourceDictionary Source="Styles/LProgressBarStyle.xaml"/>
+                
+                
             </ResourceDictionary.MergedDictionaries>
+
+            
+
         </ResourceDictionary>
 
 

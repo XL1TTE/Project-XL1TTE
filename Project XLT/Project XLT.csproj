@@ -9,10 +9,14 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <None Remove="Fonts\Nunito-Font.ttf" />
+    <None Remove="Fonts\Onest-Font.ttf" />
+    <None Remove="Images\arrowdown.png" />
     <None Remove="Images\ExitIcon.png" />
     <None Remove="Images\MainMenuIcon.png" />
     <None Remove="Images\NutritionIcon.png" />
     <None Remove="Images\SettingsIcon.png" />
+    <None Remove="Images\UserImage.jpg" />
   </ItemGroup>
 
   <ItemGroup>
@@ -25,10 +29,14 @@
   </ItemGroup>
 
   <ItemGroup>
+    <Resource Include="Fonts\Nunito-Font.ttf" />
+    <Resource Include="Fonts\Onest-Font.ttf" />
+    <Resource Include="Images\arrowdown.png" />
     <Resource Include="Images\ExitIcon.png" />
     <Resource Include="Images\MainMenuIcon.png" />
     <Resource Include="Images\NutritionIcon.png" />
     <Resource Include="Images\SettingsIcon.png" />
+    <Resource Include="Images\UserImage.jpg" />
   </ItemGroup>
 
 </Project>
