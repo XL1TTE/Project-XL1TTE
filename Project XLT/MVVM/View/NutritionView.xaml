@@ -6,43 +6,39 @@
              xmlns:comp="clr-namespace:Project_XLT.Components"
              xmlns:local="clr-namespace:Project_XLT.MVVM.View"
              mc:Ignorable="d" Height="auto" Width="auto">
-    <Grid Background="Transparent">
-        <Grid.RowDefinitions>
-            <RowDefinition Height="1*"/>
-            <RowDefinition Height="0.7*"/>
-        </Grid.RowDefinitions>
-        <Grid Grid.Row="0">
-            <Grid.ColumnDefinitions>
-                <ColumnDefinition Width="2*" />
-                <ColumnDefinition Width="*" />
-            </Grid.ColumnDefinitions>
+    <ScrollViewer VerticalScrollBarVisibility="Hidden">
 
-            <Grid Grid.Column="1">
-                <Grid.RowDefinitions>
-                    <RowDefinition Height="80"/>
-                    <RowDefinition Height="*"/>
-                </Grid.RowDefinitions>
-                <comp:NutritionUserPanel Margin="0 0 5 5"/>
-                
-            </Grid>
-            
-            <Grid Grid.Column="0">
-                <Grid.RowDefinitions>
-                    <RowDefinition Height="120"/>
-                    <RowDefinition Height="*"/>
-                </Grid.RowDefinitions>
-                <comp:NutritionTitlePanel Grid.Row="0"
+
+        <Grid Background="Transparent">
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="2*" />
+                    <ColumnDefinition Width="*" />
+                </Grid.ColumnDefinitions>
+
+                <Grid Grid.Column="1">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="80"/>
+                        <RowDefinition Height="*"/>
+                    </Grid.RowDefinitions>
+                    <comp:NutritionUserPanel Margin="0 0 5 5"/>
+                    <!--Under User Panel-->
+
+                </Grid>
+
+                <Grid Grid.Column="0">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="120"/>
+                        <RowDefinition Height="480"/>
+                    </Grid.RowDefinitions>
+                    <comp:NutritionTitlePanel Grid.Row="0"
                                           Margin="5 0 5 5"/>
-                <comp:NutritionStatPanel Grid.Row="1"
+                    <comp:NutritionStatPanel Grid.Row="1"
                                          Margin="5 0 5 0"/>
+
+                    <!--Under Stats panel-->
+                </Grid>
             </Grid>
         </Grid>
-        <Grid Grid.Row="1">
-            <Grid.ColumnDefinitions>
-                <ColumnDefinition Width="2*" />
-                <ColumnDefinition Width="*" />
-            </Grid.ColumnDefinitions>
-            
-        </Grid>
-    </Grid>
+    </ScrollViewer>
 </UserControl>

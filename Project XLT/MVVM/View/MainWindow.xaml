@@ -8,14 +8,12 @@
         xmlns:b="http://schemas.microsoft.com/xaml/behaviors"
         mc:Ignorable="d"
         Title="MainWindow" 
-        Height="720" Width="1200"
-        MinHeight="720" MinWidth="1200"
-        SizeToContent="WidthAndHeight"
+        MinHeight="720" MinWidth="1400"
+        ResizeMode="CanResize"
         AllowsTransparency="True"
         Background="Transparent"
         WindowStyle="None"  
         x:Name="Window" 
-        MouseDown="Window_MouseDown"
         >
     <Grid>
         <components:ResizeBox Panel.ZIndex="1"/>
@@ -36,10 +34,7 @@
                         <ContentControl Content="{Binding Navigation.CurrentViewModel}"/>
                     </Grid>
                 </Grid>
-
             </Grid>
-
         </Border>
-
     </Grid>
 </Window>

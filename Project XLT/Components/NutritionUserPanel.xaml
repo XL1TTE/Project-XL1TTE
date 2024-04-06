@@ -5,27 +5,49 @@
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
              xmlns:local="clr-namespace:Project_XLT.Components"
              mc:Ignorable="d" 
-             d:DesignHeight="80" d:DesignWidth="500">
-    <Grid Height="70"
-          Width="420">
+             d:DesignHeight="70" d:DesignWidth="420">
+    <Grid>
+        <Popup AllowsTransparency="True" StaysOpen="False" Placement="Bottom"
+               VerticalOffset="5"
+                                   IsOpen="{Binding IsSearchPopup, UpdateSourceTrigger=PropertyChanged}">
+            <local:SearchPopup/>
+        </Popup>
         <Border Background="WhiteSmoke" CornerRadius="35">
-        <Grid Margin="5">
-            <Grid.ColumnDefinitions>
-                <ColumnDefinition Width="*"/>
-                <ColumnDefinition Width="100"/>
-            </Grid.ColumnDefinitions>
+            <Grid Margin="5">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="100"/>
+                </Grid.ColumnDefinitions>
 
-            <Border Grid.Column="0">
-                <StackPanel Margin="45 0 0 0" VerticalAlignment="Center" HorizontalAlignment="Center">
-                    <Border>
+                <Grid Grid.Column="0">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="80"/>
+                        <ColumnDefinition Width="*"/>
+                    </Grid.ColumnDefinitions>
+                    <StackPanel Margin="5 0 0 0" VerticalAlignment="Center" HorizontalAlignment="Center" Orientation="Horizontal">
+                        <RadioButton Style="{StaticResource ButtonWithToolTip}"
+                                     Height="30"
+                                     Width="30"
+                                     Margin="2"
+                                     Tag="/Images/search.png"
+                                     Command="{Binding OpenSearchPopup}">
+
+                        </RadioButton>
+                        <RadioButton Style="{StaticResource ButtonWithToolTip}"
+                                     Height="30"
+                                     Width="30"
+                                     Margin="2"
+                                     Tag="/Images/letter.png">
+                        </RadioButton>
+                    </StackPanel>
+                    <Border Grid.Column="1" VerticalAlignment="Center" HorizontalAlignment="Right">
                         <TextBlock Text="Ведров Артем"
                                    Style="{StaticResource NunitoFontStyle}"
-                                   FontSize="36" FontWeight="Bold"/>
+                                   FontSize="32" FontWeight="Bold"/>
                     </Border>
-                </StackPanel>
-            </Border>
+                </Grid>
 
-            <Border Grid.Column="1">
+                <Border Grid.Column="1">
                     <Ellipse Height="60" Width="60">
                         <Ellipse.Fill>
                             <ImageBrush ImageSource="../Images/UserImage.jpg"
@@ -33,8 +55,8 @@
                         </Ellipse.Fill>
                     </Ellipse>
                 </Border>
-        </Grid>
+            </Grid>
         </Border>
     </Grid>
-    
+
 </UserControl>

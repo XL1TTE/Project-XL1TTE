@@ -10,11 +10,11 @@ none
 false
 TRACE;DEBUG;NET;NET6_0;NETCOREAPP
 C:\Users\Artyom\source\repos\Project XLT\Project XLT\App.xaml
-131558979222
+16-1363004141
 
-2159554028
+23-1507185264
 197-48739708
-Components\NavigationPanel.xaml;Components\NutritionStatPanel.xaml;Components\NutritionTitlePanel.xaml;Components\NutritionUserPanel.xaml;Components\ResizeBox.xaml;MVVM\View\MainMenuView.xaml;MVVM\View\MainWindow.xaml;MVVM\View\NutritionView.xaml;Styles\LProgressBarStyle.xaml;Styles\NavigationPanelStyles.xaml;Styles\ProgressBarStyle.xaml;Styles\ResizerStyle.xaml;Themes\Generic.xaml;
+Components\NavigationPanel.xaml;Components\NutritionStatPanel.xaml;Components\NutritionTitlePanel.xaml;Components\NutritionUserPanel.xaml;Components\ResizeBox.xaml;Components\SearchPopup.xaml;MVVM\View\MainMenuView.xaml;MVVM\View\MainWindow.xaml;MVVM\View\NutritionView.xaml;Styles\ButtonWithTooltipStyle.xaml;Styles\LProgressBarStyle.xaml;Styles\NavigationPanelStyles.xaml;Styles\ProgressBarStyle.xaml;Styles\ResizerStyle.xaml;Styles\TextBoxStyles.xaml;Themes\Generic.xaml;
 
 True
 

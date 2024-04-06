@@ -6,7 +6,7 @@
              xmlns:local="clr-namespace:Project_XLT.Components"
              xmlns:cc="clr-namespace:Project_XLT.CustomControls"
              mc:Ignorable="d" 
-             x:Name="this"
+             x:Name="this"         
              d:DesignHeight="450" d:DesignWidth="800"
              >
     <Grid Height="auto" Width="auto" >

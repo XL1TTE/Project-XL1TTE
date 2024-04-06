@@ -24,5 +24,6 @@ namespace Project_XLT.Components
         {
             InitializeComponent();
         }
+
     }
 }

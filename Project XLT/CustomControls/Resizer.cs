@@ -83,35 +83,35 @@ namespace Project_XLT.CustomControls
             Point GetMousePos() => Mouse.GetPosition(Target);
             deltaVertical = GetMousePos().Y + 7;
             if(deltaVertical > mw.MinHeight)
-                Target.Height = deltaVertical;
+                mw.Height = deltaVertical;
         }
         private static void ResizeTop(Grid Target, DragDeltaEventArgs e)
         {
             Window mw = App.Current.MainWindow;
-            Target.Height = Target.ActualHeight;
+            Target.Height = mw.ActualHeight;
 
             double deltaVertical;
             Point GetMousePos() => Mouse.GetPosition(Target);
             deltaVertical = GetMousePos().Y - 7;
             if ((Target.ActualHeight - deltaVertical) > mw.MinHeight)
             {
-                mw.Top += deltaVertical;
-                Target.Height -= deltaVertical;
+                mw.Top += deltaVertical-7;
+                mw.Height -= deltaVertical-7;
             }
 
         }
         private static void ResizeLeft(Grid Target, DragDeltaEventArgs e)
         {
             Window mw = App.Current.MainWindow;
-            Target.Width = Target.ActualWidth;
+            Target.Width = mw.ActualWidth;
             double deltaHorisontal;
             Point GetMousePos() => Mouse.GetPosition(Target);
             deltaHorisontal = GetMousePos().X - 7;
-            if ((Target.ActualWidth - deltaHorisontal) > mw.MinWidth)
+            if ((mw.ActualWidth - deltaHorisontal) > mw.MinWidth)
             {
-                mw.Left += deltaHorisontal;
+                mw.Left += deltaHorisontal -7;
 
-                Target.Width -= deltaHorisontal;
+                mw.Width -= deltaHorisontal-7;
             }
 
         }
@@ -123,7 +123,7 @@ namespace Project_XLT.CustomControls
             Point GetMousePos() => Mouse.GetPosition(Target);
             deltaHorisontal = GetMousePos().X + 7;
             if (deltaHorisontal > mw.MinWidth)
-                Target.Width = deltaHorisontal;
+                mw.Width = deltaHorisontal;
         }
 
         private static void TopRight(Grid Target, DragDeltaEventArgs e)

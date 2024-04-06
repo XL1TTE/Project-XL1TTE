@@ -22,6 +22,9 @@
     <Compile Update="Components\ResizeBox.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Update="Components\SearchPopup.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Update="MVVM\View\MainMenuView.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
@@ -45,6 +48,9 @@
     <Page Update="Components\ResizeBox.xaml">
       <SubType>Designer</SubType>
     </Page>
+    <Page Update="Components\SearchPopup.xaml">
+      <SubType>Designer</SubType>
+    </Page>
     <Page Update="MVVM\View\MainMenuView.xaml">
       <SubType>Designer</SubType>
     </Page>
@@ -52,6 +58,9 @@
       <SubType>Designer</SubType>
     </Page>
     <Page Update="MVVM\View\NutritionView.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Styles\ButtonWithTooltipStyle.xaml">
       <SubType>Designer</SubType>
     </Page>
     <Page Update="Styles\LProgressBarStyle.xaml">
@@ -64,6 +73,9 @@
       <SubType>Designer</SubType>
     </Page>
     <Page Update="Styles\ResizerStyle.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Styles\TextBoxStyles.xaml">
       <SubType>Designer</SubType>
     </Page>
     <Page Update="Themes\Generic.xaml">

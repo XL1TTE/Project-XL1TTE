@@ -36,9 +36,11 @@
                     </Style>
                 </ResourceDictionary>
                 <!--Styles-->
+                <ResourceDictionary Source="Styles/TextBoxStyles.xaml"/>
                 <ResourceDictionary Source="Styles/ProgressBarStyle.xaml" />
                 <ResourceDictionary Source="Styles/NavigationPanelStyles.xaml"/>
                 <ResourceDictionary Source="Styles/ResizerStyle.xaml"/>
+                <ResourceDictionary Source="Styles/ButtonWithTooltipStyle.xaml"/>
                 <ResourceDictionary Source="Styles/LProgressBarStyle.xaml"/>
                 
                 
