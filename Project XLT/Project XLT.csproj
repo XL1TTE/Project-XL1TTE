@@ -17,13 +17,10 @@
     <None Remove="Images\letter.png" />
     <None Remove="Images\MainMenuIcon.png" />
     <None Remove="Images\NutritionIcon.png" />
+    <None Remove="Images\person.png" />
     <None Remove="Images\search.png" />
     <None Remove="Images\SettingsIcon.png" />
     <None Remove="Images\UserImage.jpg" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <Folder Include="MVVM\Model\" />
   </ItemGroup>
 
   <ItemGroup>
@@ -39,6 +36,7 @@
     <Resource Include="Images\letter.png" />
     <Resource Include="Images\MainMenuIcon.png" />
     <Resource Include="Images\NutritionIcon.png" />
+    <Resource Include="Images\person.png" />
     <Resource Include="Images\search.png" />
     <Resource Include="Images\SettingsIcon.png" />
     <Resource Include="Images\UserImage.jpg" />

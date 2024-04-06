@@ -5,6 +5,7 @@ using Project_XLT.MVVM.View;
 using Project_XLT.MVVM.ViewModels;
 using Project_XLT.Services;
 using Project_XLT.MVVM.Core;
+using Project_XLT.MVVM.Model;
 
 namespace Project_XLT
 {
@@ -30,6 +31,10 @@ namespace Project_XLT
             services.AddSingleton<InavigationService, NavigationService>();
 
             services.AddSingleton<Func<Type, ViewModelBase>>(provider => viewModelType => (ViewModelBase)provider.GetRequiredService(viewModelType));
+
+
+            // Custom Services
+            services.AddSingleton<PeoplesDataBase>();
 
             serviceProvider = services.BuildServiceProvider();
         }
