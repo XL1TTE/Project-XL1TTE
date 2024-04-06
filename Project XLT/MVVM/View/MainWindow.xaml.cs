@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Project_XLT.CustomControls;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -26,11 +27,5 @@ namespace Project_XLT.MVVM.View
             
             InitializeComponent();
         }
-
-        private void Window_MouseDown(object sender, MouseButtonEventArgs e)
-        {
-
-        }
-        
     }
 }

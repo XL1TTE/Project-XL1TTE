@@ -13,8 +13,11 @@
     <None Remove="Fonts\Onest-Font.ttf" />
     <None Remove="Images\arrowdown.png" />
     <None Remove="Images\ExitIcon.png" />
+    <None Remove="Images\Latter.png" />
+    <None Remove="Images\letter.png" />
     <None Remove="Images\MainMenuIcon.png" />
     <None Remove="Images\NutritionIcon.png" />
+    <None Remove="Images\search.png" />
     <None Remove="Images\SettingsIcon.png" />
     <None Remove="Images\UserImage.jpg" />
   </ItemGroup>
@@ -33,8 +36,10 @@
     <Resource Include="Fonts\Onest-Font.ttf" />
     <Resource Include="Images\arrowdown.png" />
     <Resource Include="Images\ExitIcon.png" />
+    <Resource Include="Images\letter.png" />
     <Resource Include="Images\MainMenuIcon.png" />
     <Resource Include="Images\NutritionIcon.png" />
+    <Resource Include="Images\search.png" />
     <Resource Include="Images\SettingsIcon.png" />
     <Resource Include="Images\UserImage.jpg" />
   </ItemGroup>

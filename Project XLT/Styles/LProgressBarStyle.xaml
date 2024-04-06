@@ -21,6 +21,7 @@
                             <ProgressBar Style="{StaticResource ProgressBarXtyle}"
                                          Grid.Row="1"
                                          x:Name="ProgressBar"
+                                         Padding="{TemplateBinding Padding}"
                                         Background="#9bdcfa"
                                         Foreground="#0aaaf5"
                                          Orientation="Vertical"

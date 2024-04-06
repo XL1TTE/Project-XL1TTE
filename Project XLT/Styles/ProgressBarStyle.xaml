@@ -31,22 +31,27 @@
                                 </VisualState>
                             </VisualStateGroup>
                         </VisualStateManager.VisualStateGroups>
+                        <Grid>
+                            <Border CornerRadius="30"
+                                    BorderThickness="2"
+                                    Background="{TemplateBinding Background}">
+                             </Border>                     
                         <Border x:Name="PART_Track"
-                                CornerRadius="25 25 25 25"
+                                CornerRadius="30"
                                 BorderThickness="2"
-                                Background="{TemplateBinding Background}"
-                                >
+                                Background="Transparent"
+                            Margin="{TemplateBinding Padding}">
                             <Border.BorderBrush>
                                 <SolidColorBrush Color="Transparent" />
                             </Border.BorderBrush>
                         </Border>
                         <Border x:Name="PART_Indicator"
                                 MinHeight="80"
-                                  CornerRadius="25"
+                                  CornerRadius="30"
                                   BorderThickness="0"
                                   HorizontalAlignment="Left"
                                   Background="{TemplateBinding Foreground}"
-                                  Margin="1"
+                                  Margin="{TemplateBinding Padding}"
                                 >
                             <Border.BorderBrush>
                                 <LinearGradientBrush StartPoint="0,0"
@@ -64,6 +69,7 @@
                             </Border.BorderBrush>
                             
                         </Border>
+                        </Grid>
                     </Grid>
 
                     <ControlTemplate.Triggers>

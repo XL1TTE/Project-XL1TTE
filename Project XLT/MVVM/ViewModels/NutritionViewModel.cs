@@ -84,10 +84,25 @@ namespace Project_XLT.MVVM.ViewModels
         }
 
 
+        private bool _isSearchPopup;
+        public bool IsSearchPopup
+        {
+            get => _isSearchPopup;
+            set
+            {
+                _isSearchPopup = value;
+                OnPropertyChanged();
+
+            }
+        }
+
+        public RelayCommand OpenSearchPopup { get; set; }
 
         public NutritionViewModel(InavigationService navigation)
         {
             Navigation = navigation;
+
+            OpenSearchPopup = new RelayCommand(o => IsSearchPopup = true, o=>true);
 
             Minerals = 50;
             Water = 75;
