@@ -19,10 +19,15 @@
                 <Grid Grid.Column="1">
                     <Grid.RowDefinitions>
                         <RowDefinition Height="80"/>
+                        <RowDefinition Height="300"/>
                         <RowDefinition Height="*"/>
                     </Grid.RowDefinitions>
                     <comp:NutritionUserPanel Margin="0 0 5 5"/>
                     <!--Under User Panel-->
+
+                    <comp:EatPanel Grid.Row="1"/>
+
+                    <comp:EatenFoodPanel Grid.Row="2" Margin="0 5 0 0"/>
 
                 </Grid>
 

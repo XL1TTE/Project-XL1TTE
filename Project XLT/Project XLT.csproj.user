@@ -7,6 +7,12 @@
     </ApplicationDefinition>
   </ItemGroup>
   <ItemGroup>
+    <Compile Update="Components\EatenFoodPanel.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Components\EatPanel.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Update="Components\NavigationPanel.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
@@ -33,6 +39,12 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
+    <Page Update="Components\EatenFoodPanel.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Components\EatPanel.xaml">
+      <SubType>Designer</SubType>
+    </Page>
     <Page Update="Components\NavigationPanel.xaml">
       <SubType>Designer</SubType>
     </Page>
@@ -61,6 +73,9 @@
       <SubType>Designer</SubType>
     </Page>
     <Page Update="Styles\ButtonWithTooltipStyle.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Styles\CircularButtonStyle.xaml">
       <SubType>Designer</SubType>
     </Page>
     <Page Update="Styles\LProgressBarStyle.xaml">

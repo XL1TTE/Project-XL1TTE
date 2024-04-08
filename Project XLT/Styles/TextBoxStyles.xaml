@@ -90,4 +90,61 @@
             </Setter>
         </Style.Setters>
     </Style>
+
+    <Style TargetType="{x:Type TextBox}"
+       x:Key="CustomTextBox">
+        <Style.Setters>
+            <Setter Property="Template">
+                <Setter.Value>
+                    <ControlTemplate TargetType="TextBox">
+                        <Border Background="{TemplateBinding Background}"
+                            CornerRadius="10">
+                            <Grid>
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="*"/>
+                                </Grid.ColumnDefinitions>
+
+                                <!--Typing State Stick-->
+                                <Rectangle StrokeThickness="1"/>
+
+                                <!--Text Box-->
+                                <TextBox Margin="5 1 1 1"
+                                     Text="{Binding Text, RelativeSource={RelativeSource TemplatedParent}, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}"
+                                     BorderThickness="0"
+                                     Background="Transparent"
+                                     HorizontalAlignment="Center"
+                                     VerticalAlignment="Center"
+                                     Padding="{TemplateBinding Padding}"
+                                     Style="{StaticResource NunitoFontStyle}"
+                                     Foreground="{TemplateBinding Foreground}"
+                                     x:Name="_TextBox"/>
+
+                                <!--Type Tip Box-->
+                                <TextBlock Text="{TemplateBinding Property=Tag}"
+                                       IsHitTestVisible="False"
+                                       VerticalAlignment="Center"
+                                       HorizontalAlignment="Center"
+                                       Margin="0 0 0 0"
+                                       FontSize="11"                                           
+                                       Foreground="{TemplateBinding Foreground}"
+                                       Grid.Column="0">
+                                    <TextBlock.Style>
+                                        <Style TargetType="{x:Type TextBlock}">
+                                            <Style.Triggers>
+                                                <DataTrigger Binding="{Binding Text, ElementName=_TextBox}" Value="">
+                                                    <Setter Property="Visibility" Value="Visible"/>
+                                                </DataTrigger>
+                                            </Style.Triggers>
+                                            <Setter Property="Visibility" Value="Hidden"/>
+                                            <Setter Property="TextElement.FontFamily" Value="/Fonts/#Nunito Font" />
+                                        </Style>
+                                    </TextBlock.Style>
+                                </TextBlock>
+                            </Grid>
+                        </Border>
+                    </ControlTemplate>
+                </Setter.Value>
+            </Setter>
+        </Style.Setters>
+    </Style>
 </ResourceDictionary>
