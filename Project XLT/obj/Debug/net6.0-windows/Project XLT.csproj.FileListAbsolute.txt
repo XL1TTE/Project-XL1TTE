@@ -53,3 +53,5 @@ C:\Users\Artyom\source\repos\Project XLT\Project XLT\obj\Debug\net6.0-windows\Co
 C:\Users\Artyom\source\repos\Project XLT\Project XLT\obj\Debug\net6.0-windows\Components\EatPanel.baml
 C:\Users\Artyom\source\repos\Project XLT\Project XLT\obj\Debug\net6.0-windows\Components\EatenFoodPanel.g.cs
 C:\Users\Artyom\source\repos\Project XLT\Project XLT\obj\Debug\net6.0-windows\Components\EatenFoodPanel.baml
+C:\Users\Artyom\source\repos\Project XLT\Project XLT\obj\Debug\net6.0-windows\Components\RecipesPanel.g.cs
+C:\Users\Artyom\source\repos\Project XLT\Project XLT\obj\Debug\net6.0-windows\Components\RecipesPanel.baml

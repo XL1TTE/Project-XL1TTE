@@ -14,6 +14,7 @@
     <None Remove="Images\arrowdown.png" />
     <None Remove="Images\eat.png" />
     <None Remove="Images\ExitIcon.png" />
+    <None Remove="Images\filter.png" />
     <None Remove="Images\Latter.png" />
     <None Remove="Images\letter.png" />
     <None Remove="Images\MainMenuIcon.png" />
@@ -37,6 +38,7 @@
     <Resource Include="Images\arrowdown.png" />
     <Resource Include="Images\eat.png" />
     <Resource Include="Images\ExitIcon.png" />
+    <Resource Include="Images\filter.png" />
     <Resource Include="Images\letter.png" />
     <Resource Include="Images\MainMenuIcon.png" />
     <Resource Include="Images\minus.png" />

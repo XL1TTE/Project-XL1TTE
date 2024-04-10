@@ -25,6 +25,9 @@
     <Compile Update="Components\NutritionUserPanel.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Update="Components\RecipesPanel.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Update="Components\ResizeBox.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
@@ -55,6 +58,9 @@
       <SubType>Designer</SubType>
     </Page>
     <Page Update="Components\NutritionUserPanel.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Components\RecipesPanel.xaml">
       <SubType>Designer</SubType>
     </Page>
     <Page Update="Components\ResizeBox.xaml">

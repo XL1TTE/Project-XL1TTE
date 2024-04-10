@@ -8,18 +8,15 @@
         xmlns:b="http://schemas.microsoft.com/xaml/behaviors"
         mc:Ignorable="d"
         Title="MainWindow" 
-        MinHeight="720" MinWidth="1400"
-        ResizeMode="CanResize"
         AllowsTransparency="True"
         Background="Transparent"
-        WindowStyle="None"  
-        x:Name="Window" 
-        >
-    <Grid>
+        MinHeight="720" MinWidth="1400"
+        ResizeMode="CanResize"
+        WindowStyle="None">
+    <Grid Margin="0">
         <components:ResizeBox Panel.ZIndex="1"/>
         <Border Background="LightGray" CornerRadius="15" Margin="2">
-
-            <Grid Margin="3">
+            <Grid Margin="1">
                 <Grid Grid.Row="1" Grid.Column="1" Margin="3">
                     <Grid.ColumnDefinitions>
                         <ColumnDefinition Width="180"/>

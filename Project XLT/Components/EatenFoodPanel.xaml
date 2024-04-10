@@ -8,7 +8,7 @@
              mc:Ignorable="d" 
              d:DesignHeight="350" d:DesignWidth="500"
              x:Name="this">
-    <Grid MinHeight="350">
+    <Grid MinHeight="350" MaxHeight="350">
         <Border Background="WhiteSmoke"
                 CornerRadius="25">
             <Grid>
@@ -37,10 +37,29 @@
                         <ItemsControl.ItemTemplate>
                             <DataTemplate>
                                 <Border CornerRadius="5"
-                                Margin="1"
-                                Background="White"
-                                BorderThickness="1"
-                                BorderBrush="DarkGray">
+                                Background="WhiteSmoke"
+                                BorderThickness="1">
+                                    <Border.Style>
+                                        <Style TargetType="Border">
+                                            <Style.Triggers>
+                                                <Trigger Property="IsMouseOver" Value="True">
+                                                    <Setter Property="BorderBrush" Value="LightGray"/>
+                                                    <Setter Property="Margin" Value="3 5 3 5"/>
+                                                    <Setter Property="Effect">
+                                                        <Setter.Value>
+                                                            <DropShadowEffect BlurRadius="10"
+                                                                                      ShadowDepth="0"
+                                                                                      Opacity="0"/>
+                                                        </Setter.Value>
+                                                    </Setter>
+                                                </Trigger>
+                                            </Style.Triggers>
+                                            <Setter Property="Background" Value="WhiteSmoke"/>
+                                            <Setter Property="BorderBrush" Value="WhiteSmoke"/>
+
+                                            <Setter Property="Margin" Value="3"/>
+                                        </Style>
+                                    </Border.Style>
                                     <Grid>
                                         <Grid.ColumnDefinitions>
                                             <ColumnDefinition Width="40"/>
@@ -57,21 +76,27 @@
 
                                         <!--Food title-->
                                         <StackPanel Grid.Column="1"
+                                                    Margin="10 0 0 0"
                                         HorizontalAlignment="Left"
                                         VerticalAlignment="Center">
-                                            <TextBlock>
+                                            <TextBlock FontSize="18"
+                                                       HorizontalAlignment="Center"
+                                                       VerticalAlignment="Center"
+                                                       FontWeight="Bold"
+                                                       FontFamily="/Fonts/#Nunito Font">
                                                 <TextBlock.Text>
                                                     <MultiBinding StringFormat="{}{0}">
                                                         <Binding Path="Title" />
                                                     </MultiBinding>
                                                 </TextBlock.Text>
                                             </TextBlock>
-                                            <TextBlock Text="{Binding BJUStatictis}"/>
+                                            
                                         </StackPanel>
                                         <TextBox Style="{StaticResource CustomTextBox}"
                                                  Grid.Column="2"
                                                  Text="{Binding Gramms, Mode=TwoWay}"
                                                  Tag="Грамм"
+                                                 FontFamily="/Fonts/#Nunito Font"
                                                  Background="LightGray"
                                                  HorizontalAlignment="Right"
                                                  Height="20"

@@ -1,10 +1,12 @@
 ﻿
 FC:\Users\Artyom\source\repos\Project XLT\Project XLT\App.xaml;;
+FC:\Users\Artyom\source\repos\Project XLT\Project XLT\Components\EatenFoodPanel.xaml;;
 FC:\Users\Artyom\source\repos\Project XLT\Project XLT\Components\EatPanel.xaml;;
 FC:\Users\Artyom\source\repos\Project XLT\Project XLT\Components\NavigationPanel.xaml;;
 FC:\Users\Artyom\source\repos\Project XLT\Project XLT\Components\NutritionStatPanel.xaml;;
 FC:\Users\Artyom\source\repos\Project XLT\Project XLT\Components\NutritionTitlePanel.xaml;;
 FC:\Users\Artyom\source\repos\Project XLT\Project XLT\Components\NutritionUserPanel.xaml;;
+FC:\Users\Artyom\source\repos\Project XLT\Project XLT\Components\RecipesPanel.xaml;;
 FC:\Users\Artyom\source\repos\Project XLT\Project XLT\Components\ResizeBox.xaml;;
 FC:\Users\Artyom\source\repos\Project XLT\Project XLT\Components\SearchPopup.xaml;;
 FC:\Users\Artyom\source\repos\Project XLT\Project XLT\MVVM\View\MainMenuView.xaml;;
@@ -13,5 +15,4 @@ FC:\Users\Artyom\source\repos\Project XLT\Project XLT\MVVM\View\NutritionView.xa
 FC:\Users\Artyom\source\repos\Project XLT\Project XLT\Styles\LProgressBarStyle.xaml;;
 FC:\Users\Artyom\source\repos\Project XLT\Project XLT\Styles\ResizerStyle.xaml;;
 FC:\Users\Artyom\source\repos\Project XLT\Project XLT\Themes\Generic.xaml;;
-FC:\Users\Artyom\source\repos\Project XLT\Project XLT\Components\EatenFoodPanel.xaml;;
 

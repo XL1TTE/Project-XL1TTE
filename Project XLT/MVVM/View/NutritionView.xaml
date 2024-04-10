@@ -15,12 +15,12 @@
                     <ColumnDefinition Width="2*" />
                     <ColumnDefinition Width="*" />
                 </Grid.ColumnDefinitions>
-
+                <!--Right Side-->
                 <Grid Grid.Column="1">
                     <Grid.RowDefinitions>
                         <RowDefinition Height="80"/>
                         <RowDefinition Height="300"/>
-                        <RowDefinition Height="*"/>
+                        <RowDefinition Height="360"/>
                     </Grid.RowDefinitions>
                     <comp:NutritionUserPanel Margin="0 0 5 5"/>
                     <!--Under User Panel-->
@@ -30,18 +30,23 @@
                     <comp:EatenFoodPanel Grid.Row="2" Margin="0 5 0 0"/>
 
                 </Grid>
-
+                <!--Left Side-->
                 <Grid Grid.Column="0">
                     <Grid.RowDefinitions>
                         <RowDefinition Height="120"/>
                         <RowDefinition Height="480"/>
+                        <RowDefinition Height="480"/>
                     </Grid.RowDefinitions>
+                    
+                    <!--Under Stats panel-->
                     <comp:NutritionTitlePanel Grid.Row="0"
                                           Margin="5 0 5 5"/>
                     <comp:NutritionStatPanel Grid.Row="1"
                                          Margin="5 0 5 0"/>
+                    <comp:RecipesPanel Grid.Row="2"
+                                       Margin="5"/>
 
-                    <!--Under Stats panel-->
+
                 </Grid>
             </Grid>
         </Grid>
