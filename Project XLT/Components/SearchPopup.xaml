@@ -18,9 +18,9 @@
             <TextBox Style="{StaticResource SearchTextBox}"
                      Margin="10"
                      Background="LightGray"
-                     Text="{Binding SearchFieldText, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}"/>
+                     Text="{Binding SearchPeopleFieldText, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}"/>
             <Border Grid.Row="1"
-                    Background="LightGray"
+                    Background="WhiteSmoke"
                     CornerRadius="15"
                     Margin="4">
                 
@@ -48,7 +48,14 @@
                                         <StackPanel Grid.Column="1"
                                                 HorizontalAlignment="Left"
                                                 VerticalAlignment="Center">
-                                            <TextBlock Text="{Binding Name}"/>
+                                            <TextBlock>
+                                                <TextBlock.Text>
+                                                    <MultiBinding StringFormat="{}{0} {1} лет">
+                                                        <Binding Path="Name" />
+                                                        <Binding Path="Age" />
+                                                    </MultiBinding>
+                                                </TextBlock.Text>
+                                            </TextBlock>
                                             <TextBlock Text="{Binding City}"/>
                                         </StackPanel>
                                     </Grid>

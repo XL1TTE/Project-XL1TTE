@@ -7,6 +7,12 @@
     </ApplicationDefinition>
   </ItemGroup>
   <ItemGroup>
+    <Compile Update="Components\EatenFoodPanel.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Components\EatPanel.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Update="Components\NavigationPanel.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
@@ -17,6 +23,9 @@
       <SubType>Code</SubType>
     </Compile>
     <Compile Update="Components\NutritionUserPanel.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Components\RecipesPanel.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
     <Compile Update="Components\ResizeBox.xaml.cs">
@@ -33,6 +42,12 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
+    <Page Update="Components\EatenFoodPanel.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Components\EatPanel.xaml">
+      <SubType>Designer</SubType>
+    </Page>
     <Page Update="Components\NavigationPanel.xaml">
       <SubType>Designer</SubType>
     </Page>
@@ -43,6 +58,9 @@
       <SubType>Designer</SubType>
     </Page>
     <Page Update="Components\NutritionUserPanel.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Components\RecipesPanel.xaml">
       <SubType>Designer</SubType>
     </Page>
     <Page Update="Components\ResizeBox.xaml">
@@ -61,6 +79,9 @@
       <SubType>Designer</SubType>
     </Page>
     <Page Update="Styles\ButtonWithTooltipStyle.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Styles\CircularButtonStyle.xaml">
       <SubType>Designer</SubType>
     </Page>
     <Page Update="Styles\LProgressBarStyle.xaml">

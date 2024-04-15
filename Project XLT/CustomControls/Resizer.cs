@@ -78,12 +78,13 @@ namespace Project_XLT.CustomControls
         private static void ResizeBottom(Grid Target, DragDeltaEventArgs e)
         {
             Window mw = App.Current.MainWindow;
+            Target.Height = mw.ActualHeight;
 
             double deltaVertical;
             Point GetMousePos() => Mouse.GetPosition(Target);
             deltaVertical = GetMousePos().Y + 7;
             if(deltaVertical > mw.MinHeight)
-                mw.Height = deltaVertical;
+                mw.Height = deltaVertical-7;
         }
         private static void ResizeTop(Grid Target, DragDeltaEventArgs e)
         {
