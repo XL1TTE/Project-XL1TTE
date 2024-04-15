@@ -20,6 +20,10 @@
                 <views:MainMenuView />
             </DataTemplate>
 
+            <DataTemplate DataType="{x:Type vms:GeneralViewModel}">
+                <views:GeneralView />
+            </DataTemplate>
+
             <ResourceDictionary.MergedDictionaries>
                 <!-- Fonts -->
                 <ResourceDictionary>
