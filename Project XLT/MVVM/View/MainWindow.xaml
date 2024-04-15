@@ -15,23 +15,6 @@
         WindowStyle="None">
     <Grid Margin="0">
         <components:ResizeBox Panel.ZIndex="1"/>
-        <Border Background="LightGray" CornerRadius="15" Margin="2">
-            <Grid Margin="1">
-                <Grid Grid.Row="1" Grid.Column="1" Margin="3">
-                    <Grid.ColumnDefinitions>
-                        <ColumnDefinition Width="180"/>
-                        <ColumnDefinition />
-                    </Grid.ColumnDefinitions>
-
-                    <Grid Grid.Column="0">
-                        <components:NavigationPanel/>
-                    </Grid>
-
-                    <Grid Grid.Column="1">
-                        <ContentControl Content="{Binding Navigation.CurrentViewModel}"/>
-                    </Grid>
-                </Grid>
-            </Grid>
-        </Border>
+        <ContentControl Content="{Binding Navigation.GlobalCurrentViewModel}"/>
     </Grid>
 </Window>

@@ -21,9 +21,23 @@ namespace Project_XLT.MVVM.ViewModels
             }
         }
 
+
+        private string _test;
+        public string Test
+        {
+            get => _test;
+            set
+            {
+                _test = value;
+
+            }
+        }
+
+
         public MainMenuViewModel(InavigationService navigationservice)
         {
             Navigation = navigationservice;
+            Test = "Работает";
         }
     }
 

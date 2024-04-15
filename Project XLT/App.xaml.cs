@@ -26,6 +26,7 @@ namespace Project_XLT
             services.AddSingleton<MainWindowViewModel>();
             services.AddSingleton<NutritionViewModel>();
             services.AddSingleton<MainMenuViewModel>();
+            services.AddSingleton<GeneralViewModel>();
 
 
             services.AddSingleton<InavigationService, NavigationService>();

@@ -46,13 +46,19 @@
                                        FontSize="18"/>
                                 </Border>
                                 <Border Margin="25 0 0 0" Grid.Row="1">
-                                    <TextBlock Grid.Row="0"
+                                    <StackPanel Orientation="Horizontal">
+                                        <TextBlock Grid.Row="0"
                                        Text="Набор мышечной массы"
                                                TextWrapping="Wrap"
                                                TextAlignment="Left"
                                                Style="{StaticResource NunitoFontStyle}"
                                        FontWeight="Normal"
                                        FontSize="16"/>
+                                        <Button Style="{StaticResource CircularButton}"
+                                                Margin="5 0 0 0"
+                                                Command="{Binding ShowDietsListCommand}"/>
+                                    </StackPanel>
+
                                 </Border>
                             </StackPanel>
                         </Grid>
