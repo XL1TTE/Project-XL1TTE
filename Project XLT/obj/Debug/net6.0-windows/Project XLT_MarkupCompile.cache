@@ -10,11 +10,11 @@ none
 false
 TRACE;DEBUG;NET;NET6_0;NETCOREAPP
 C:\Users\Artyom\source\repos\Project XLT\Project XLT\App.xaml
-21173556826
+221492617190
 
-28333972436
+31-1601243470
 197-48739708
-Components\EatenFoodPanel.xaml;Components\EatPanel.xaml;Components\NavigationPanel.xaml;Components\NutritionStatPanel.xaml;Components\NutritionTitlePanel.xaml;Components\NutritionUserPanel.xaml;Components\RecipesPanel.xaml;Components\ResizeBox.xaml;Components\SearchPopup.xaml;MVVM\View\GeneralView.xaml;MVVM\View\MainMenuView.xaml;MVVM\View\MainWindow.xaml;MVVM\View\NutritionView.xaml;Styles\ButtonWithTooltipStyle.xaml;Styles\CircularButtonStyle.xaml;Styles\LProgressBarStyle.xaml;Styles\NavigationPanelStyles.xaml;Styles\ProgressBarStyle.xaml;Styles\ResizerStyle.xaml;Styles\TextBoxStyles.xaml;Themes\Generic.xaml;
+Components\EatenFoodPanel.xaml;Components\EatPanel.xaml;Components\NavigationPanel.xaml;Components\NutritionStatPanel.xaml;Components\NutritionTitlePanel.xaml;Components\NutritionUserPanel.xaml;Components\RecipesPanel.xaml;Components\ResizeBox.xaml;Components\SearchPopup.xaml;MVVM\View\DietListView.xaml;MVVM\View\GeneralView.xaml;MVVM\View\MainMenuView.xaml;MVVM\View\MainWindow.xaml;MVVM\View\NutritionView.xaml;Styles\ButtonWithTooltipStyle.xaml;Styles\CircularButtonStyle.xaml;Styles\LProgressBarStyle.xaml;Styles\NavigationPanelStyles.xaml;Styles\ProgressBarStyle.xaml;Styles\ResizerStyle.xaml;Styles\TextBoxStyles.xaml;Themes\Generic.xaml;
 
 False
 

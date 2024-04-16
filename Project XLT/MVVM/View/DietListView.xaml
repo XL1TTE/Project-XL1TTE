@@ -1,0 +1,178 @@
+﻿<UserControl x:Class="Project_XLT.MVVM.View.DietListView"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:Project_XLT.MVVM.View"
+             mc:Ignorable="d" 
+             d:DesignHeight="450" d:DesignWidth="800">
+    <Grid>
+        <Border CornerRadius="15"
+                Background="LightGray">
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="120"/>
+                    <RowDefinition Height="*"/>
+                </Grid.RowDefinitions>
+                <!--Header-->
+                <Border Grid.Row="0"
+                        Background="WhiteSmoke"
+                        CornerRadius="25"
+                        Margin="5">
+                    <Grid>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="*"/>
+                            <ColumnDefinition Width="330"/>
+                        </Grid.ColumnDefinitions>
+                        <!--Page Title-->
+                        <Border Grid.Column="0">
+                            <StackPanel VerticalAlignment="Center"
+                                        Margin="25 0 0 0">
+                                <TextBlock Text="Программы питания" 
+                                       Style="{StaticResource NunitoFontStyle}"
+                                       FontSize="32"/>
+                                <TextBlock Text="Выбери свою цель!" 
+                                       Style="{StaticResource NunitoFontStyle}"
+                                       FontSize="18"
+                                       VerticalAlignment="Center"/>
+                            </StackPanel>
+
+                            
+                        </Border>
+                        <!--Choosen Diet-->
+                        <Border Grid.Column="1" Background="#c38cfa" 
+                                CornerRadius="15"
+                                Margin="10 10 10 10"
+                                Width="300"
+                                MinWidth="300">
+                            <Grid  Margin="5">
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="*"/>
+                                    <ColumnDefinition Width="0.2*"/>
+                                </Grid.ColumnDefinitions>
+                                <Grid Grid.Row="0">
+                                    <StackPanel Margin="0" VerticalAlignment="Center">
+                                        <Border Margin="25 0 0 0">
+                                            <TextBlock Grid.Row="0"
+                                       Text="Выбранная диета:"
+                                               Style="{StaticResource NunitoFontStyle}"
+                                       FontWeight="Bold"
+                                       FontSize="18"/>
+                                        </Border>
+                                        <Border Margin="25 0 0 0" Grid.Row="1">
+                                            <StackPanel Orientation="Horizontal">
+                                                <TextBlock Grid.Row="0"
+                                       Text="Набор мышечной массы"
+                                               TextWrapping="Wrap"
+                                               TextAlignment="Left"
+                                               Style="{StaticResource NunitoFontStyle}"
+                                       FontWeight="Normal"
+                                       FontSize="16"/>
+                                            </StackPanel>
+                                        </Border>
+                                    </StackPanel>
+                                </Grid>
+                            </Grid>
+                        </Border>
+                    </Grid>
+                 </Border>
+                
+                <!--Diet List-->
+                <Border Grid.Row="1"
+                        Background="WhiteSmoke"
+                        CornerRadius="25"
+                        Margin="5 0 5 5">
+                    <Grid>
+                        <ItemsControl ItemsSource="{Binding DietList}">
+                            <ItemsControl.ItemTemplate>
+                                <DataTemplate>
+                                    <Border BorderBrush="Gray"
+                                            BorderThickness="0 2 0 0"
+                                            Margin="25 10 25 0">
+                                        <Grid Margin="5">
+                                            <Grid.ColumnDefinitions>
+                                                <ColumnDefinition Width="200"/>
+                                                <ColumnDefinition Width="*"/>
+                                                <ColumnDefinition Width="120"/>
+                                            </Grid.ColumnDefinitions>
+                                            
+                                            <!--Diet Image-->
+                                            <Border Grid.Column="0">
+                                                <Ellipse VerticalAlignment="Center"
+                                                         HorizontalAlignment="Center"
+                                                         Width="160"
+                                                         Height="160">
+                                                    <Ellipse.Fill>
+                                                        <ImageBrush ImageSource="../../Images/food.jpg"/>
+                                                    </Ellipse.Fill>
+                                                </Ellipse>
+                                            </Border>
+                                            <!--Diet Description-->
+                                            <Border Grid.Column="1">
+                                                <StackPanel Orientation="Vertical"
+                                                            VerticalAlignment="Center"
+                                                            HorizontalAlignment="Left"
+                                                            Margin="10 0 0 0">
+                                                    <TextBlock Text="{Binding DietTitle}"
+                                                               Style="{StaticResource NunitoFontStyle}"
+                                                               FontSize="18"
+                                                               FontWeight="Bold"/>
+                                                    <TextBlock Text="{Binding DietDescription}"
+                                                               Style="{StaticResource NunitoFontStyle}"
+                                                               TextWrapping="Wrap"
+                                                               FontSize="14"/>
+                                                </StackPanel>
+                                            </Border>
+                                            
+                                            <!--Diet Pick Buton-->
+                                            <Border Grid.Column="2">
+                                                <Button Background="Transparent"
+                                                        VerticalAlignment="Center"
+                                                        HorizontalAlignment="Center">
+                                                    <Button.Style>
+                                                        <Style TargetType="{x:Type Button}">
+                                                            <Style.Setters>
+                                                                <Setter Property="Template">
+                                                                    <Setter.Value>
+                                                                        <ControlTemplate TargetType="Button">
+                                                                            <Grid>
+                                                                                <Border CornerRadius="10"
+                                                                                        Background="{TemplateBinding Background}">
+                                                                                    <Grid HorizontalAlignment="Center"
+                                                                                          VerticalAlignment="Center">
+                                                                                        <Image Source="../../Images/plus150.png"
+                                                                                               HorizontalAlignment="Center"
+                                                                                               VerticalAlignment="Center"
+                                                                                               IsHitTestVisible="False"/>
+                                                                                    </Grid>
+                                                                                </Border>
+                                                                            </Grid>
+
+                                                                        </ControlTemplate>
+                                                                    </Setter.Value>
+                                                                </Setter>
+                                                                <Setter Property="Width" Value="80"/>
+                                                                <Setter Property="Content" Value=""/>
+                                                                <Setter Property="Height" Value="80"/>
+                                                            </Style.Setters>
+                                                            <Style.Triggers>
+                                                                <Trigger Property="IsMouseOver" Value="True">
+                                                                    <Setter Property="Width" Value="100"/>
+                                                                    <Setter Property="Height" Value="100"/>
+                                                                </Trigger>
+                                                            </Style.Triggers>
+                                                        </Style>
+                                                    </Button.Style>
+                                                </Button>
+                                            </Border>
+                                        </Grid>
+                                    </Border>
+                                </DataTemplate>
+                            </ItemsControl.ItemTemplate>
+                        </ItemsControl>
+                    </Grid>
+                </Border>
+            </Grid>
+        </Border>
+    </Grid>
+</UserControl>

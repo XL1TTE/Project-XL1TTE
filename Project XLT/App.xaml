@@ -24,6 +24,10 @@
                 <views:GeneralView />
             </DataTemplate>
 
+            <DataTemplate DataType="{x:Type vms:DietListViewModel}">
+                <views:DietListView />
+            </DataTemplate>
+
             <ResourceDictionary.MergedDictionaries>
                 <!-- Fonts -->
                 <ResourceDictionary>

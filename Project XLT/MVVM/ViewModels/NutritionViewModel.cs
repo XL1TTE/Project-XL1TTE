@@ -240,7 +240,7 @@ namespace Project_XLT.MVVM.ViewModels
             }, o=> true);
             EatAllFood = new RelayCommand(o => EatAllFoodInBasket(), o=>true);
 
-            ShowDietsListCommand = new RelayCommand(o => { Navigation.GlobalNavigateTo<MainMenuViewModel>(); },  o=>true );
+            ShowDietsListCommand = new RelayCommand(o => { Navigation.GlobalNavigateTo<DietListViewModel>(); },  o=>true );
 
             Minerals = 50;
             Water = 75;

@@ -1,59 +1,61 @@
-C:\Users\Artyom\source\repos\Project XLT\Project XLT\obj\Debug\net6.0-windows\MVVM\View\MainWindow.g.cs
-C:\Users\Artyom\source\repos\Project XLT\Project XLT\obj\Debug\net6.0-windows\App.g.cs
-C:\Users\Artyom\source\repos\Project XLT\Project XLT\obj\Debug\net6.0-windows\Project XLT_MarkupCompile.cache
-C:\Users\Artyom\source\repos\Project XLT\Project XLT\obj\Debug\net6.0-windows\Project XLT_MarkupCompile.lref
-C:\Users\Artyom\source\repos\Project XLT\Project XLT\obj\Debug\net6.0-windows\MVVM\View\MainWindow.baml
-C:\Users\Artyom\source\repos\Project XLT\Project XLT\obj\Debug\net6.0-windows\Project XLT.dll
-C:\Users\Artyom\source\repos\Project XLT\Project XLT\obj\Debug\net6.0-windows\refint\Project XLT.dll
-C:\Users\Artyom\source\repos\Project XLT\Project XLT\obj\Debug\net6.0-windows\Project XLT.pdb
 C:\Users\Artyom\source\repos\Project XLT\Project XLT\bin\Debug\net6.0-windows\Project XLT.exe
 C:\Users\Artyom\source\repos\Project XLT\Project XLT\bin\Debug\net6.0-windows\Project XLT.deps.json
 C:\Users\Artyom\source\repos\Project XLT\Project XLT\bin\Debug\net6.0-windows\Project XLT.runtimeconfig.json
 C:\Users\Artyom\source\repos\Project XLT\Project XLT\bin\Debug\net6.0-windows\Project XLT.dll
 C:\Users\Artyom\source\repos\Project XLT\Project XLT\bin\Debug\net6.0-windows\Project XLT.pdb
+C:\Users\Artyom\source\repos\Project XLT\Project XLT\bin\Debug\net6.0-windows\Microsoft.Extensions.DependencyInjection.dll
+C:\Users\Artyom\source\repos\Project XLT\Project XLT\bin\Debug\net6.0-windows\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+C:\Users\Artyom\source\repos\Project XLT\Project XLT\bin\Debug\net6.0-windows\Microsoft.Xaml.Behaviors.dll
+C:\Users\Artyom\source\repos\Project XLT\Project XLT\obj\Debug\net6.0-windows\Project XLT.csproj.AssemblyReference.cache
+C:\Users\Artyom\source\repos\Project XLT\Project XLT\obj\Debug\net6.0-windows\Styles\ButtonWithTooltipStyle.baml
+C:\Users\Artyom\source\repos\Project XLT\Project XLT\obj\Debug\net6.0-windows\Styles\CircularButtonStyle.baml
+C:\Users\Artyom\source\repos\Project XLT\Project XLT\obj\Debug\net6.0-windows\Styles\NavigationPanelStyles.baml
+C:\Users\Artyom\source\repos\Project XLT\Project XLT\obj\Debug\net6.0-windows\Styles\ProgressBarStyle.baml
+C:\Users\Artyom\source\repos\Project XLT\Project XLT\obj\Debug\net6.0-windows\Styles\TextBoxStyles.baml
+C:\Users\Artyom\source\repos\Project XLT\Project XLT\obj\Debug\net6.0-windows\Components\EatenFoodPanel.g.cs
+C:\Users\Artyom\source\repos\Project XLT\Project XLT\obj\Debug\net6.0-windows\Components\EatPanel.g.cs
+C:\Users\Artyom\source\repos\Project XLT\Project XLT\obj\Debug\net6.0-windows\Components\NavigationPanel.g.cs
+C:\Users\Artyom\source\repos\Project XLT\Project XLT\obj\Debug\net6.0-windows\Components\NutritionStatPanel.g.cs
+C:\Users\Artyom\source\repos\Project XLT\Project XLT\obj\Debug\net6.0-windows\Components\NutritionTitlePanel.g.cs
+C:\Users\Artyom\source\repos\Project XLT\Project XLT\obj\Debug\net6.0-windows\Components\NutritionUserPanel.g.cs
+C:\Users\Artyom\source\repos\Project XLT\Project XLT\obj\Debug\net6.0-windows\Components\RecipesPanel.g.cs
+C:\Users\Artyom\source\repos\Project XLT\Project XLT\obj\Debug\net6.0-windows\Components\ResizeBox.g.cs
+C:\Users\Artyom\source\repos\Project XLT\Project XLT\obj\Debug\net6.0-windows\Components\SearchPopup.g.cs
+C:\Users\Artyom\source\repos\Project XLT\Project XLT\obj\Debug\net6.0-windows\MVVM\View\DietListView.g.cs
+C:\Users\Artyom\source\repos\Project XLT\Project XLT\obj\Debug\net6.0-windows\MVVM\View\GeneralView.g.cs
+C:\Users\Artyom\source\repos\Project XLT\Project XLT\obj\Debug\net6.0-windows\MVVM\View\MainMenuView.g.cs
+C:\Users\Artyom\source\repos\Project XLT\Project XLT\obj\Debug\net6.0-windows\MVVM\View\MainWindow.g.cs
+C:\Users\Artyom\source\repos\Project XLT\Project XLT\obj\Debug\net6.0-windows\MVVM\View\NutritionView.g.cs
+C:\Users\Artyom\source\repos\Project XLT\Project XLT\obj\Debug\net6.0-windows\App.g.cs
+C:\Users\Artyom\source\repos\Project XLT\Project XLT\obj\Debug\net6.0-windows\GeneratedInternalTypeHelper.g.cs
+C:\Users\Artyom\source\repos\Project XLT\Project XLT\obj\Debug\net6.0-windows\Project XLT_MarkupCompile.cache
+C:\Users\Artyom\source\repos\Project XLT\Project XLT\obj\Debug\net6.0-windows\Project XLT_MarkupCompile.lref
+C:\Users\Artyom\source\repos\Project XLT\Project XLT\obj\Debug\net6.0-windows\App.baml
+C:\Users\Artyom\source\repos\Project XLT\Project XLT\obj\Debug\net6.0-windows\Components\EatenFoodPanel.baml
+C:\Users\Artyom\source\repos\Project XLT\Project XLT\obj\Debug\net6.0-windows\Components\EatPanel.baml
+C:\Users\Artyom\source\repos\Project XLT\Project XLT\obj\Debug\net6.0-windows\Components\NavigationPanel.baml
+C:\Users\Artyom\source\repos\Project XLT\Project XLT\obj\Debug\net6.0-windows\Components\NutritionStatPanel.baml
+C:\Users\Artyom\source\repos\Project XLT\Project XLT\obj\Debug\net6.0-windows\Components\NutritionTitlePanel.baml
+C:\Users\Artyom\source\repos\Project XLT\Project XLT\obj\Debug\net6.0-windows\Components\NutritionUserPanel.baml
+C:\Users\Artyom\source\repos\Project XLT\Project XLT\obj\Debug\net6.0-windows\Components\RecipesPanel.baml
+C:\Users\Artyom\source\repos\Project XLT\Project XLT\obj\Debug\net6.0-windows\Components\ResizeBox.baml
+C:\Users\Artyom\source\repos\Project XLT\Project XLT\obj\Debug\net6.0-windows\Components\SearchPopup.baml
+C:\Users\Artyom\source\repos\Project XLT\Project XLT\obj\Debug\net6.0-windows\MVVM\View\DietListView.baml
+C:\Users\Artyom\source\repos\Project XLT\Project XLT\obj\Debug\net6.0-windows\MVVM\View\GeneralView.baml
+C:\Users\Artyom\source\repos\Project XLT\Project XLT\obj\Debug\net6.0-windows\MVVM\View\MainMenuView.baml
+C:\Users\Artyom\source\repos\Project XLT\Project XLT\obj\Debug\net6.0-windows\MVVM\View\MainWindow.baml
+C:\Users\Artyom\source\repos\Project XLT\Project XLT\obj\Debug\net6.0-windows\MVVM\View\NutritionView.baml
+C:\Users\Artyom\source\repos\Project XLT\Project XLT\obj\Debug\net6.0-windows\Styles\LProgressBarStyle.baml
+C:\Users\Artyom\source\repos\Project XLT\Project XLT\obj\Debug\net6.0-windows\Styles\ResizerStyle.baml
+C:\Users\Artyom\source\repos\Project XLT\Project XLT\obj\Debug\net6.0-windows\Themes\Generic.baml
 C:\Users\Artyom\source\repos\Project XLT\Project XLT\obj\Debug\net6.0-windows\Project XLT.g.resources
 C:\Users\Artyom\source\repos\Project XLT\Project XLT\obj\Debug\net6.0-windows\Project XLT.GeneratedMSBuildEditorConfig.editorconfig
 C:\Users\Artyom\source\repos\Project XLT\Project XLT\obj\Debug\net6.0-windows\Project XLT.AssemblyInfoInputs.cache
 C:\Users\Artyom\source\repos\Project XLT\Project XLT\obj\Debug\net6.0-windows\Project XLT.AssemblyInfo.cs
 C:\Users\Artyom\source\repos\Project XLT\Project XLT\obj\Debug\net6.0-windows\Project XLT.csproj.CoreCompileInputs.cache
+C:\Users\Artyom\source\repos\Project XLT\Project XLT\obj\Debug\net6.0-windows\Project XLT.csproj.CopyComplete
+C:\Users\Artyom\source\repos\Project XLT\Project XLT\obj\Debug\net6.0-windows\Project XLT.dll
+C:\Users\Artyom\source\repos\Project XLT\Project XLT\obj\Debug\net6.0-windows\refint\Project XLT.dll
+C:\Users\Artyom\source\repos\Project XLT\Project XLT\obj\Debug\net6.0-windows\Project XLT.pdb
 C:\Users\Artyom\source\repos\Project XLT\Project XLT\obj\Debug\net6.0-windows\Project XLT.genruntimeconfig.cache
 C:\Users\Artyom\source\repos\Project XLT\Project XLT\obj\Debug\net6.0-windows\ref\Project XLT.dll
-C:\Users\Artyom\source\repos\Project XLT\Project XLT\obj\Debug\net6.0-windows\GeneratedInternalTypeHelper.g.cs
-C:\Users\Artyom\source\repos\Project XLT\Project XLT\bin\Debug\net6.0-windows\Microsoft.Extensions.DependencyInjection.dll
-C:\Users\Artyom\source\repos\Project XLT\Project XLT\bin\Debug\net6.0-windows\Microsoft.Extensions.DependencyInjection.Abstractions.dll
-C:\Users\Artyom\source\repos\Project XLT\Project XLT\obj\Debug\net6.0-windows\Project XLT.csproj.AssemblyReference.cache
-C:\Users\Artyom\source\repos\Project XLT\Project XLT\obj\Debug\net6.0-windows\Project XLT.csproj.CopyComplete
-C:\Users\Artyom\source\repos\Project XLT\Project XLT\obj\Debug\net6.0-windows\MVVM\View\NutritionView.g.cs
-C:\Users\Artyom\source\repos\Project XLT\Project XLT\obj\Debug\net6.0-windows\App.baml
-C:\Users\Artyom\source\repos\Project XLT\Project XLT\obj\Debug\net6.0-windows\MVVM\View\NutritionView.baml
-C:\Users\Artyom\source\repos\Project XLT\Project XLT\obj\Debug\net6.0-windows\MVVM\View\MainMenuView.g.cs
-C:\Users\Artyom\source\repos\Project XLT\Project XLT\obj\Debug\net6.0-windows\MVVM\View\MainMenuView.baml
-C:\Users\Artyom\source\repos\Project XLT\Project XLT\obj\Debug\net6.0-windows\Styles\NavigationPanelStyles.baml
-C:\Users\Artyom\source\repos\Project XLT\Project XLT\obj\Debug\net6.0-windows\Components\NavigationPanel.g.cs
-C:\Users\Artyom\source\repos\Project XLT\Project XLT\obj\Debug\net6.0-windows\Components\NavigationPanel.baml
-C:\Users\Artyom\source\repos\Project XLT\Project XLT\bin\Debug\net6.0-windows\Microsoft.Xaml.Behaviors.dll
-C:\Users\Artyom\source\repos\Project XLT\Project XLT\obj\Debug\net6.0-windows\Styles\ResizerStyle.baml
-C:\Users\Artyom\source\repos\Project XLT\Project XLT\obj\Debug\net6.0-windows\Components\ResizeBox.g.cs
-C:\Users\Artyom\source\repos\Project XLT\Project XLT\obj\Debug\net6.0-windows\Components\ResizeBox.baml
-C:\Users\Artyom\source\repos\Project XLT\Project XLT\obj\Debug\net6.0-windows\Components\NutritionTitlePanel.g.cs
-C:\Users\Artyom\source\repos\Project XLT\Project XLT\obj\Debug\net6.0-windows\Components\NutritionTitlePanel.baml
-C:\Users\Artyom\source\repos\Project XLT\Project XLT\obj\Debug\net6.0-windows\Components\NutritionUserPanel.g.cs
-C:\Users\Artyom\source\repos\Project XLT\Project XLT\obj\Debug\net6.0-windows\Components\NutritionUserPanel.baml
-C:\Users\Artyom\source\repos\Project XLT\Project XLT\obj\Debug\net6.0-windows\Components\NutritionStatPanel.g.cs
-C:\Users\Artyom\source\repos\Project XLT\Project XLT\obj\Debug\net6.0-windows\Components\NutritionStatPanel.baml
-C:\Users\Artyom\source\repos\Project XLT\Project XLT\obj\Debug\net6.0-windows\Styles\ProgressBarStyle.baml
-C:\Users\Artyom\source\repos\Project XLT\Project XLT\obj\Debug\net6.0-windows\Themes\Generic.baml
-C:\Users\Artyom\source\repos\Project XLT\Project XLT\obj\Debug\net6.0-windows\Styles\LProgressBarStyle.baml
-C:\Users\Artyom\source\repos\Project XLT\Project XLT\obj\Debug\net6.0-windows\Styles\ButtonWithTooltipStyle.baml
-C:\Users\Artyom\source\repos\Project XLT\Project XLT\obj\Debug\net6.0-windows\Components\SearchPopup.g.cs
-C:\Users\Artyom\source\repos\Project XLT\Project XLT\obj\Debug\net6.0-windows\Components\SearchPopup.baml
-C:\Users\Artyom\source\repos\Project XLT\Project XLT\obj\Debug\net6.0-windows\Styles\TextBoxStyles.baml
-C:\Users\Artyom\source\repos\Project XLT\Project XLT\obj\Debug\net6.0-windows\Styles\CircularButtonStyle.baml
-C:\Users\Artyom\source\repos\Project XLT\Project XLT\obj\Debug\net6.0-windows\Components\EatPanel.g.cs
-C:\Users\Artyom\source\repos\Project XLT\Project XLT\obj\Debug\net6.0-windows\Components\EatPanel.baml
-C:\Users\Artyom\source\repos\Project XLT\Project XLT\obj\Debug\net6.0-windows\Components\EatenFoodPanel.g.cs
-C:\Users\Artyom\source\repos\Project XLT\Project XLT\obj\Debug\net6.0-windows\Components\EatenFoodPanel.baml
-C:\Users\Artyom\source\repos\Project XLT\Project XLT\obj\Debug\net6.0-windows\Components\RecipesPanel.g.cs
-C:\Users\Artyom\source\repos\Project XLT\Project XLT\obj\Debug\net6.0-windows\Components\RecipesPanel.baml
-C:\Users\Artyom\source\repos\Project XLT\Project XLT\obj\Debug\net6.0-windows\MVVM\View\GeneralView.g.cs
-C:\Users\Artyom\source\repos\Project XLT\Project XLT\obj\Debug\net6.0-windows\MVVM\View\GeneralView.baml
