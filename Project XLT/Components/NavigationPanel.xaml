@@ -25,17 +25,21 @@
                              IsChecked="True"
                              Command="{Binding NavigateToMainMenu}"
                              Style="{StaticResource NavigationPanelButtonStyle}"/>
+                    
+                    <RadioButton Content="Диеты" 
+                             Height="30"
+                             Margin="10"
+                             Tag="/Images/SettingsIcon.png"
+                                 Command="{Binding NavigateToDietMenu}"
+                             Style="{StaticResource NavigationPanelButtonStyle}"/>
+                    
                     <RadioButton Content="Питание" 
                              Height="30"
                              Margin="10"
                              Tag="/Images/NutritionIcon.png"
                              Command="{Binding NavigateToNutrition}"
                              Style="{StaticResource NavigationPanelButtonStyle}"/>
-                    <RadioButton Content="Настройки" 
-                             Height="30"
-                             Margin="10"
-                             Tag="/Images/SettingsIcon.png"
-                             Style="{StaticResource NavigationPanelButtonStyle}"/>
+
                     <RadioButton Content="Выход" 
                              Height="30"
                              Margin="10"
