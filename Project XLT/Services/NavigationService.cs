@@ -10,19 +10,31 @@ namespace Project_XLT.Services
 {
     public interface InavigationService
     {
-        ViewModelBase CurrentViewModel { get; }
-        void NavigateTo<T>() where T : ViewModelBase;
+        ViewModelBase GlobalCurrentViewModel { get; }
+        ViewModelBase LocalCurrentViewModel { get; }
+        void GlobalNavigateTo<T>() where T : ViewModelBase;
+        void LocalNavigateTo<T>() where T : ViewModelBase;
     }
     public class NavigationService : ObservableObject, InavigationService
     {
         private Func<Type, ViewModelBase> navFactory;
-        private ViewModelBase _currentViewModel;
-        public ViewModelBase CurrentViewModel
+        private ViewModelBase _globalcurrentViewModel;
+        public ViewModelBase GlobalCurrentViewModel
         {
-            get => _currentViewModel;
+            get => _globalcurrentViewModel;
             set
             {
-                _currentViewModel = value;
+                _globalcurrentViewModel = value;
+                OnPropertyChanged();
+            }
+        }
+        private ViewModelBase _localcurrentViewModel;
+        public ViewModelBase LocalCurrentViewModel
+        {
+            get => _localcurrentViewModel;
+            set
+            {
+                _localcurrentViewModel = value;
                 OnPropertyChanged();
             }
         }
@@ -32,10 +44,15 @@ namespace Project_XLT.Services
             navFactory = factory;
         }
 
-        public void NavigateTo<ViewModelType>() where ViewModelType : ViewModelBase
+        public void GlobalNavigateTo<ViewModelType>() where ViewModelType : ViewModelBase
         {
             ViewModelBase _viewModel = navFactory.Invoke(typeof(ViewModelType));
-            CurrentViewModel = _viewModel;
+            GlobalCurrentViewModel = _viewModel;
+        }
+        public void LocalNavigateTo<ViewModelType>() where ViewModelType : ViewModelBase
+        {
+            ViewModelBase _viewModel = navFactory.Invoke(typeof(ViewModelType));
+            LocalCurrentViewModel = _viewModel;
         }
     }
 }

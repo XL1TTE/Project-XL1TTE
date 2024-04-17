@@ -34,6 +34,12 @@
     <Compile Update="Components\SearchPopup.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Update="MVVM\View\DietListView.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="MVVM\View\GeneralView.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Update="MVVM\View\MainMenuView.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
@@ -67,6 +73,12 @@
       <SubType>Designer</SubType>
     </Page>
     <Page Update="Components\SearchPopup.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="MVVM\View\DietListView.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="MVVM\View\GeneralView.xaml">
       <SubType>Designer</SubType>
     </Page>
     <Page Update="MVVM\View\MainMenuView.xaml">

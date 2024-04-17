@@ -26,6 +26,8 @@ namespace Project_XLT
             services.AddSingleton<MainWindowViewModel>();
             services.AddSingleton<NutritionViewModel>();
             services.AddSingleton<MainMenuViewModel>();
+            services.AddSingleton<GeneralViewModel>();
+            services.AddSingleton<DietListViewModel>();
 
 
             services.AddSingleton<InavigationService, NavigationService>();
@@ -35,6 +37,7 @@ namespace Project_XLT
 
             // Custom Services
             services.AddSingleton<PeoplesDataBase>();
+            services.AddSingleton<DietBaseModel>();
 
             serviceProvider = services.BuildServiceProvider();
         }
