@@ -4,7 +4,9 @@
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
              xmlns:local="clr-namespace:Project_XLT.MVVM.View"
-             mc:Ignorable="d" 
+             xmlns:ec="http://schemas.microsoft.com/xaml/behaviors"
+             mc:Ignorable="d"
+             x:Name="this"
              d:DesignHeight="450" d:DesignWidth="800">
     <Grid>
         <Border CornerRadius="15"
@@ -22,7 +24,7 @@
                     <Grid>
                         <Grid.ColumnDefinitions>
                             <ColumnDefinition Width="*"/>
-                            <ColumnDefinition Width="330"/>
+                            <ColumnDefinition Width="360"/>
                         </Grid.ColumnDefinitions>
                         <!--Page Title-->
                         <Border Grid.Column="0">
@@ -43,13 +45,9 @@
                         <Border Grid.Column="1" Background="#c38cfa" 
                                 CornerRadius="15"
                                 Margin="10 10 10 10"
-                                Width="300"
+                                Width="auto"
                                 MinWidth="300">
                             <Grid  Margin="5">
-                                <Grid.ColumnDefinitions>
-                                    <ColumnDefinition Width="*"/>
-                                    <ColumnDefinition Width="0.2*"/>
-                                </Grid.ColumnDefinitions>
                                 <Grid Grid.Row="0">
                                     <StackPanel Margin="0" VerticalAlignment="Center">
                                         <Border Margin="25 0 0 0">
@@ -59,16 +57,14 @@
                                        FontWeight="Bold"
                                        FontSize="18"/>
                                         </Border>
-                                        <Border Margin="25 0 0 0" Grid.Row="1">
-                                            <StackPanel Orientation="Horizontal">
-                                                <TextBlock Grid.Row="0"
-                                       Text="Набор мышечной массы"
-                                               TextWrapping="Wrap"
-                                               TextAlignment="Left"
-                                               Style="{StaticResource NunitoFontStyle}"
-                                       FontWeight="Normal"
-                                       FontSize="16"/>
-                                            </StackPanel>
+                                        <Border Margin="25 0 10 0" Grid.Row="1">
+                                            <TextBlock Grid.Row="0"
+                                                            Text="{Binding PickedDiet.DietTitle}"
+                                                           TextWrapping="Wrap"
+                                                           TextAlignment="Left"
+                                                           Style="{StaticResource NunitoFontStyle}"
+                                                           FontWeight="Normal"
+                                                           FontSize="16"/>
                                         </Border>
                                     </StackPanel>
                                 </Grid>
@@ -83,93 +79,119 @@
                         CornerRadius="25"
                         Margin="5 0 5 5">
                     <Grid>
-                        <ItemsControl ItemsSource="{Binding DietList}">
-                            <ItemsControl.ItemTemplate>
-                                <DataTemplate>
-                                    <Border BorderBrush="Gray"
-                                            BorderThickness="0 2 0 0"
-                                            Margin="25 10 25 0">
-                                        <Grid Margin="5">
-                                            <Grid.ColumnDefinitions>
-                                                <ColumnDefinition Width="200"/>
-                                                <ColumnDefinition Width="*"/>
-                                                <ColumnDefinition Width="120"/>
-                                            </Grid.ColumnDefinitions>
-                                            
-                                            <!--Diet Image-->
-                                            <Border Grid.Column="0">
-                                                <Ellipse VerticalAlignment="Center"
-                                                         HorizontalAlignment="Center"
-                                                         Width="160"
-                                                         Height="160">
-                                                    <Ellipse.Fill>
-                                                        <ImageBrush ImageSource="../../Images/food.jpg"/>
-                                                    </Ellipse.Fill>
-                                                </Ellipse>
-                                            </Border>
-                                            <!--Diet Description-->
-                                            <Border Grid.Column="1">
-                                                <StackPanel Orientation="Vertical"
-                                                            VerticalAlignment="Center"
-                                                            HorizontalAlignment="Left"
-                                                            Margin="10 0 0 0">
-                                                    <TextBlock Text="{Binding DietTitle}"
-                                                               Style="{StaticResource NunitoFontStyle}"
-                                                               FontSize="18"
-                                                               FontWeight="Bold"/>
-                                                    <TextBlock Text="{Binding DietDescription}"
-                                                               Style="{StaticResource NunitoFontStyle}"
-                                                               TextWrapping="Wrap"
-                                                               FontSize="14"/>
-                                                </StackPanel>
-                                            </Border>
-                                            
-                                            <!--Diet Pick Buton-->
-                                            <Border Grid.Column="2">
-                                                <Button Background="Transparent"
-                                                        VerticalAlignment="Center"
-                                                        HorizontalAlignment="Center">
-                                                    <Button.Style>
-                                                        <Style TargetType="{x:Type Button}">
-                                                            <Style.Setters>
-                                                                <Setter Property="Template">
-                                                                    <Setter.Value>
-                                                                        <ControlTemplate TargetType="Button">
-                                                                            <Grid>
-                                                                                <Border CornerRadius="10"
-                                                                                        Background="{TemplateBinding Background}">
-                                                                                    <Grid HorizontalAlignment="Center"
-                                                                                          VerticalAlignment="Center">
-                                                                                        <Image Source="../../Images/plus150.png"
-                                                                                               HorizontalAlignment="Center"
-                                                                                               VerticalAlignment="Center"
-                                                                                               IsHitTestVisible="False"/>
-                                                                                    </Grid>
-                                                                                </Border>
-                                                                            </Grid>
+                        <ScrollViewer VerticalScrollBarVisibility="Hidden">
+                            <ItemsControl ItemsSource="{Binding DietList}">
+                                <ItemsControl.ItemTemplate>
+                                    <DataTemplate>
+                                        <Border BorderBrush="Gray"
+                    BorderThickness="0 2 0 0"
+                    Margin="25 10 25 0">
+                                            <Grid Margin="5">
+                                                <Grid.ColumnDefinitions>
+                                                    <ColumnDefinition Width="200"/>
+                                                    <ColumnDefinition Width="*"/>
+                                                    <ColumnDefinition Width="120"/>
+                                                </Grid.ColumnDefinitions>
 
-                                                                        </ControlTemplate>
-                                                                    </Setter.Value>
-                                                                </Setter>
-                                                                <Setter Property="Width" Value="80"/>
-                                                                <Setter Property="Content" Value=""/>
-                                                                <Setter Property="Height" Value="80"/>
-                                                            </Style.Setters>
-                                                            <Style.Triggers>
-                                                                <Trigger Property="IsMouseOver" Value="True">
-                                                                    <Setter Property="Width" Value="100"/>
-                                                                    <Setter Property="Height" Value="100"/>
-                                                                </Trigger>
-                                                            </Style.Triggers>
-                                                        </Style>
-                                                    </Button.Style>
-                                                </Button>
-                                            </Border>
-                                        </Grid>
-                                    </Border>
-                                </DataTemplate>
-                            </ItemsControl.ItemTemplate>
-                        </ItemsControl>
+                                                <!--Diet Image-->
+                                                <Border Grid.Column="0">
+                                                    <Ellipse VerticalAlignment="Center"
+                                 HorizontalAlignment="Center"
+                                 Width="160"
+                                 Height="160">
+                                                        <Ellipse.Fill>
+                                                            <ImageBrush ImageSource="../../Images/food.jpg"/>
+                                                        </Ellipse.Fill>
+                                                    </Ellipse>
+                                                </Border>
+                                                <!--Diet Description-->
+                                                <Border Grid.Column="1">
+                                                    <StackPanel Orientation="Vertical"
+                                    VerticalAlignment="Center"
+                                    HorizontalAlignment="Left"
+                                    Margin="10 0 0 0">
+                                                        <TextBlock Text="{Binding DietTitle}"
+                                       Style="{StaticResource NunitoFontStyle}"
+                                       FontSize="18"
+                                       FontWeight="Bold"/>
+                                                        <TextBlock Text="{Binding DietDescription}"
+                                       Style="{StaticResource NunitoFontStyle}"
+                                       TextWrapping="Wrap"
+                                       FontSize="14"/>
+                                                    </StackPanel>
+                                                </Border>
+
+                                                <!--Diet Pick Buton-->
+                                                <Border Grid.Column="2">
+                                                    <RadioButton 
+                                VerticalAlignment="Center"
+                                HorizontalAlignment="Center"
+                            IsChecked="{Binding IsDietChoosed, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}">
+                                                        <ec:Interaction.Triggers>
+                                                            <ec:EventTrigger EventName="Click">
+                                                                <ec:InvokeCommandAction PassEventArgsToCommand="True"
+                                    Command="{Binding ElementName=this, Path=DataContext.PickDietCommand}"/>
+                                                            </ec:EventTrigger>
+                                                        </ec:Interaction.Triggers>
+                                                        <RadioButton.Style>
+                                                            <Style TargetType="{x:Type RadioButton}"
+                                       BasedOn="{StaticResource {x:Type RadioButton}}">
+                                                                <Style.Setters>
+                                                                    <Setter Property="Template">
+                                                                        <Setter.Value>
+                                                                            <ControlTemplate TargetType="RadioButton">
+                                                                                <Grid>
+                                                                                    <Border CornerRadius="10"
+                                                                Background="Transparent">
+                                                                                        <Grid HorizontalAlignment="Center"
+                                                                  VerticalAlignment="Center">
+                                                                                            <Image Source="{Binding Tag, RelativeSource={RelativeSource TemplatedParent}}"
+                                                                        HorizontalAlignment="Center"
+                                                                        VerticalAlignment="Center"
+                                                                        IsHitTestVisible="False"
+                                                                       x:Name="PART_Image"/>
+                                                                                        </Grid>
+                                                                                    </Border>
+                                                                                </Grid>
+                                                                                <ControlTemplate.Triggers>
+                                                                                    <Trigger Property="IsChecked" Value="True">
+                                                                                        <Setter TargetName="PART_Image" Property="Source" Value="../../Images/picked.png"/>
+                                                                                    </Trigger>
+                                                                                    <Trigger Property="IsChecked" Value="False">
+                                                                                        <Setter TargetName="PART_Image" Property="Source" Value="../../Images/plus150.png"/>
+                                                                                    </Trigger>
+                                                                                </ControlTemplate.Triggers>
+                                                                            </ControlTemplate>
+
+                                                                        </Setter.Value>
+                                                                    </Setter>
+                                                                    <Setter Property="Tag" Value="../../Images/plus150.png"/>
+                                                                    <Setter Property="Width" Value="80"/>
+                                                                    <Setter Property="Height" Value="80"/>
+                                                                </Style.Setters>
+                                                                <Style.Triggers>
+                                                                    <Trigger Property="IsMouseOver" Value="True">
+                                                                        <Setter Property="Width" Value="100"/>
+                                                                        <Setter Property="Height" Value="100"/>
+
+                                                                    </Trigger>
+                                                                </Style.Triggers>
+                                                            </Style>
+                                                        </RadioButton.Style>
+                                                    </RadioButton>
+                                                </Border>
+                                            </Grid>
+                                        </Border>
+                                    </DataTemplate>
+                                </ItemsControl.ItemTemplate>
+                                <ItemsControl.ItemsPanel>
+                                    <ItemsPanelTemplate>
+                                        <StackPanel Orientation="Vertical"/>
+                                    </ItemsPanelTemplate>
+                                </ItemsControl.ItemsPanel>
+                            </ItemsControl>
+                        </ScrollViewer>
+                        
                     </Grid>
                 </Border>
             </Grid>

@@ -23,6 +23,7 @@
     <None Remove="Images\minus.png" />
     <None Remove="Images\NutritionIcon.png" />
     <None Remove="Images\person.png" />
+    <None Remove="Images\picked.png" />
     <None Remove="Images\plus.png" />
     <None Remove="Images\plus150.png" />
     <None Remove="Images\search.png" />
@@ -48,6 +49,7 @@
     <Resource Include="Images\minus.png" />
     <Resource Include="Images\NutritionIcon.png" />
     <Resource Include="Images\person.png" />
+    <Resource Include="Images\picked.png" />
     <Resource Include="Images\plus.png" />
     <Resource Include="Images\plus150.png" />
     <Resource Include="Images\search.png" />

@@ -189,6 +189,18 @@ namespace Project_XLT.MVVM.ViewModels
         }
 
 
+        private DietBaseModel _dietBaseModel;
+        public DietBaseModel DietBaseModel
+        {
+            get => _dietBaseModel;
+            set
+            {
+                _dietBaseModel = value;
+                OnPropertyChanged();
+            }
+        }
+
+
 
         public RelayCommand OpenSearchPopup { get; set; }
         public RelayCommand OpenFoodListPopup { get; set; }
@@ -197,7 +209,7 @@ namespace Project_XLT.MVVM.ViewModels
         public RelayCommand EatAllFood { get;set; }
         public RelayCommand ShowDietsListCommand { get; set; }
 
-        public NutritionViewModel(InavigationService navigation, PeoplesDataBase peoples)
+        public NutritionViewModel(InavigationService navigation, PeoplesDataBase peoples, DietBaseModel dietBaseModel)
         {
             Navigation = navigation;
 
@@ -207,7 +219,8 @@ namespace Project_XLT.MVVM.ViewModels
             PeoplesDataBase = peoples.PeoplesData;
             FoodList = LocalFoodDataBase.Products;
 
-            
+            DietBaseModel = dietBaseModel;
+
             OpenSearchPopup = new RelayCommand(o => { IsSearchPopup = (IsSearchPopup ? false : true); }, o => true);
 
             OpenFoodListPopup = new RelayCommand(o => { IsFoodListVisible = (IsFoodListVisible == Visibility.Visible ? Visibility.Collapsed : Visibility.Visible); 

@@ -26,12 +26,15 @@ namespace Project_XLT.MVVM.ViewModels
         public RelayCommand NavigateToNutrition { get; set; }
         public RelayCommand NavigateToMainMenu { get; set; }
         public RelayCommand ExitCommand { get; set; }
+        public RelayCommand NavigateToDietMenu { get; set; }
         public GeneralViewModel(InavigationService navigation)
         {
             Navigation = navigation;
             Navigation.LocalNavigateTo<MainMenuViewModel>();
+
             NavigateToNutrition = new RelayCommand(o => { Navigation.LocalNavigateTo<NutritionViewModel>(); }, o => true);
             NavigateToMainMenu = new RelayCommand(o => { Navigation.LocalNavigateTo<MainMenuViewModel>(); }, o => true);
+            NavigateToDietMenu = new RelayCommand(o => { Navigation.LocalNavigateTo<DietListViewModel>(); }, o => true);
             ExitCommand = new RelayCommand(o => { Application.Current.Shutdown(); }, o => true);
         }
     }
