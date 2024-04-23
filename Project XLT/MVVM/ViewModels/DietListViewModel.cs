@@ -64,7 +64,6 @@ namespace Project_XLT.MVVM.ViewModels
 
 
         public RelayCommand PickDietCommand { get; set; }
-        public RelayCommand NavigateToNutritionCommand { get; set; }
         public DietListViewModel(InavigationService navigation, DietBaseModel dietBaseModel)
         {
             Navigation = navigation;
@@ -72,8 +71,7 @@ namespace Project_XLT.MVVM.ViewModels
             DietList = new ObservableCollection<DietModel>(dietBaseModel.DietList);
             DietBaseModel = dietBaseModel;
 
-            PickDietCommand = new RelayCommand(o => { PickDietFunc(o); }, o=>true);
-            NavigateToNutritionCommand = new RelayCommand(o => { Navigation.GlobalNavigateTo<GeneralViewModel>(); }, o => true);
+            PickDietCommand = new RelayCommand(o => { PickDietFunc(o); }, o=>true);       
 
         }
 

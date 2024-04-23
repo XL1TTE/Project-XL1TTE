@@ -7,28 +7,28 @@
     </ApplicationDefinition>
   </ItemGroup>
   <ItemGroup>
-    <Compile Update="Components\EatenFoodPanel.xaml.cs">
+    <Compile Update="Components\NutritionViewComponents\EatenFoodPanel.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Update="Components\EatPanel.xaml.cs">
+    <Compile Update="Components\NutritionViewComponents\EatPanel.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Update="Components\NavigationPanel.xaml.cs">
+    <Compile Update="Components\GeneralViewComponents\NavigationPanel.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Update="Components\NutritionStatPanel.xaml.cs">
+    <Compile Update="Components\NutritionViewComponents\NutritionStatPanel.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Update="Components\NutritionTitlePanel.xaml.cs">
+    <Compile Update="Components\NutritionViewComponents\NutritionTitlePanel.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Update="Components\NutritionUserPanel.xaml.cs">
+    <Compile Update="Components\NutritionViewComponents\NutritionUserPanel.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Update="Components\RecipesPanel.xaml.cs">
+    <Compile Update="Components\NutritionViewComponents\RecipesPanel.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Update="Components\ResizeBox.xaml.cs">
+    <Compile Update="Components\GeneralComponents\ResizeBox.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
     <Compile Update="Components\SearchPopup.xaml.cs">
@@ -48,28 +48,28 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
-    <Page Update="Components\EatenFoodPanel.xaml">
+    <Page Update="Components\NutritionViewComponents\EatenFoodPanel.xaml">
       <SubType>Designer</SubType>
     </Page>
-    <Page Update="Components\EatPanel.xaml">
+    <Page Update="Components\NutritionViewComponents\EatPanel.xaml">
       <SubType>Designer</SubType>
     </Page>
-    <Page Update="Components\NavigationPanel.xaml">
+    <Page Update="Components\GeneralViewComponents\NavigationPanel.xaml">
       <SubType>Designer</SubType>
     </Page>
-    <Page Update="Components\NutritionStatPanel.xaml">
+    <Page Update="Components\NutritionViewComponents\NutritionStatPanel.xaml">
       <SubType>Designer</SubType>
     </Page>
-    <Page Update="Components\NutritionTitlePanel.xaml">
+    <Page Update="Components\NutritionViewComponents\NutritionTitlePanel.xaml">
       <SubType>Designer</SubType>
     </Page>
-    <Page Update="Components\NutritionUserPanel.xaml">
+    <Page Update="Components\NutritionViewComponents\NutritionUserPanel.xaml">
       <SubType>Designer</SubType>
     </Page>
-    <Page Update="Components\RecipesPanel.xaml">
+    <Page Update="Components\NutritionViewComponents\RecipesPanel.xaml">
       <SubType>Designer</SubType>
     </Page>
-    <Page Update="Components\ResizeBox.xaml">
+    <Page Update="Components\GeneralComponents\ResizeBox.xaml">
       <SubType>Designer</SubType>
     </Page>
     <Page Update="Components\SearchPopup.xaml">
@@ -94,6 +94,9 @@
       <SubType>Designer</SubType>
     </Page>
     <Page Update="Styles\CircularButtonStyle.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Styles\Images and Icons\ImagesAndIcons.xaml">
       <SubType>Designer</SubType>
     </Page>
     <Page Update="Styles\LProgressBarStyle.xaml">

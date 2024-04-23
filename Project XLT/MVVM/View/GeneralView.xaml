@@ -21,7 +21,7 @@
                     </Grid>
 
                     <Grid Grid.Column="1">
-                        <ContentControl Content="{Binding Navigation.LocalCurrentViewModel}"/>
+                        <ContentControl Content="{Binding Navigation.GenerallocalcurrentViewModel}"/>
                     </Grid>
                 </Grid>
             </Grid>

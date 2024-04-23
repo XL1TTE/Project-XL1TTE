@@ -1,0 +1,6 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+    <BitmapImage x:Key="SearchIcon" UriSource="..\..\Images\UI icons\search.png"/>
+    <BitmapImage x:Key="DeleteIcon" UriSource="..\..\Images\UI icons\minus.png"/>
+    <BitmapImage x:Key="AddIcon" UriSource="..\..\Images\UI icons\plus.png"/>
+</ResourceDictionary>

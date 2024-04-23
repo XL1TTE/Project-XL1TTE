@@ -11,9 +11,9 @@ namespace Project_XLT.Services
     public interface InavigationService
     {
         ViewModelBase GlobalCurrentViewModel { get; }
-        ViewModelBase LocalCurrentViewModel { get; }
+        ViewModelBase GenerallocalcurrentViewModel { get; }
         void GlobalNavigateTo<T>() where T : ViewModelBase;
-        void LocalNavigateTo<T>() where T : ViewModelBase;
+        void GeneralNavigateTo<T>() where T : ViewModelBase;
     }
     public class NavigationService : ObservableObject, InavigationService
     {
@@ -28,13 +28,13 @@ namespace Project_XLT.Services
                 OnPropertyChanged();
             }
         }
-        private ViewModelBase _localcurrentViewModel;
-        public ViewModelBase LocalCurrentViewModel
+        private ViewModelBase _generallocalcurrentViewModel;
+        public ViewModelBase GenerallocalcurrentViewModel
         {
-            get => _localcurrentViewModel;
+            get => _generallocalcurrentViewModel;
             set
             {
-                _localcurrentViewModel = value;
+                _generallocalcurrentViewModel = value;
                 OnPropertyChanged();
             }
         }
@@ -49,10 +49,11 @@ namespace Project_XLT.Services
             ViewModelBase _viewModel = navFactory.Invoke(typeof(ViewModelType));
             GlobalCurrentViewModel = _viewModel;
         }
-        public void LocalNavigateTo<ViewModelType>() where ViewModelType : ViewModelBase
+        public void GeneralNavigateTo<ViewModelType>() where ViewModelType : ViewModelBase
         {
             ViewModelBase _viewModel = navFactory.Invoke(typeof(ViewModelType));
-            LocalCurrentViewModel = _viewModel;
+            GenerallocalcurrentViewModel = _viewModel;
         }
     }
+
 }

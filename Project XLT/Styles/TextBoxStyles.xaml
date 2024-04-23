@@ -62,7 +62,7 @@
                                                         <ControlTemplate>
                                                             <Border Background="{TemplateBinding Property=Background}"
                                                                     x:Name="SearchButtonBorder">
-                                                                <Image Source="../Images/search.png"
+                                                                <Image Source="{StaticResource SearchIcon}"
                                                                    Grid.Column="1"
                                                                    VerticalAlignment="Center"
                                                                    HorizontalAlignment="Center"

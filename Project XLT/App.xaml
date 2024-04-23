@@ -29,6 +29,10 @@
             </DataTemplate>
 
             <ResourceDictionary.MergedDictionaries>
+
+                <!--Icons-->
+                <ResourceDictionary Source="Styles/Images and Icons/ImagesAndIcons.xaml"/>
+                
                 <!-- Fonts -->
                 <ResourceDictionary>
                     <Style 
@@ -51,8 +55,7 @@
                 <ResourceDictionary Source="Styles/ResizerStyle.xaml"/>
                 <ResourceDictionary Source="Styles/ButtonWithTooltipStyle.xaml"/>
                 <ResourceDictionary Source="Styles/LProgressBarStyle.xaml"/>
-                
-                
+
             </ResourceDictionary.MergedDictionaries>
 
             

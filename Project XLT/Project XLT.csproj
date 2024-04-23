@@ -39,21 +39,21 @@
   <ItemGroup>
     <Resource Include="Fonts\Nunito-Font.ttf" />
     <Resource Include="Fonts\Onest-Font.ttf" />
-    <Resource Include="Images\arrowdown.png" />
-    <Resource Include="Images\eat.png" />
-    <Resource Include="Images\ExitIcon.png" />
-    <Resource Include="Images\filter.png" />
-    <Resource Include="Images\food.jpg" />
-    <Resource Include="Images\letter.png" />
-    <Resource Include="Images\MainMenuIcon.png" />
-    <Resource Include="Images\minus.png" />
-    <Resource Include="Images\NutritionIcon.png" />
+    <Resource Include="Images\UI icons\arrowdown.png" />
+    <Resource Include="Images\Nutrition Images\eat.png" />
+    <Resource Include="Images\Navigation Icons\ExitIcon.png" />
+    <Resource Include="Images\UI icons\filter.png" />
+    <Resource Include="Images\Nutrition Images\food.jpg" />
+    <Resource Include="Images\UI icons\letter.png" />
+    <Resource Include="Images\Navigation Icons\MainMenuIcon.png" />
+    <Resource Include="Images\UI icons\minus.png" />
+    <Resource Include="Images\Navigation Icons\NutritionIcon.png" />
     <Resource Include="Images\person.png" />
-    <Resource Include="Images\picked.png" />
-    <Resource Include="Images\plus.png" />
-    <Resource Include="Images\plus150.png" />
-    <Resource Include="Images\search.png" />
-    <Resource Include="Images\SettingsIcon.png" />
+    <Resource Include="Images\UI icons\picked.png" />
+    <Resource Include="Images\UI icons\plus.png" />
+    <Resource Include="Images\UI icons\plus150.png" />
+    <Resource Include="Images\UI icons\search.png" />
+    <Resource Include="Images\Navigation Icons\SettingsIcon.png" />
     <Resource Include="Images\UserImage.jpg" />
   </ItemGroup>
 
