@@ -2,6 +2,7 @@
 using Project_XLT.Services;
 using System;
 using System.Collections.Generic;
+using System.Collections.ObjectModel;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -30,13 +31,14 @@ namespace Project_XLT.MVVM.ViewModels
         public GeneralViewModel(InavigationService navigation)
         {
             Navigation = navigation;
-            Navigation.LocalNavigateTo<MainMenuViewModel>();
+            Navigation.GeneralNavigateTo<MainMenuViewModel>();
 
-            NavigateToNutrition = new RelayCommand(o => { Navigation.LocalNavigateTo<NutritionViewModel>(); }, o => true);
-            NavigateToMainMenu = new RelayCommand(o => { Navigation.LocalNavigateTo<MainMenuViewModel>(); }, o => true);
-            NavigateToDietMenu = new RelayCommand(o => { Navigation.LocalNavigateTo<DietListViewModel>(); }, o => true);
+            NavigateToNutrition = new RelayCommand(o => { Navigation.GeneralNavigateTo<NutritionViewModel>();}, o => true);
+            NavigateToMainMenu = new RelayCommand(o => { Navigation.GeneralNavigateTo<MainMenuViewModel>();}, o => true);
+            NavigateToDietMenu = new RelayCommand(o => { Navigation.GeneralNavigateTo<DietListViewModel>();}, o => true);
             ExitCommand = new RelayCommand(o => { Application.Current.Shutdown(); }, o => true);
         }
+
     }
 }
 

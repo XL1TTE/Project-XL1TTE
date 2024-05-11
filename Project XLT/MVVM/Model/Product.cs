@@ -31,7 +31,7 @@ namespace Project_XLT.MVVM.Model
         }
         public double? ColoriesSum { get; set; }
         public double? Colories { get; set; }
-        public string Image { get; set; } = "../Images/eat.png";
+        public string Image { get; set; } = "../../Images/Nutrition Images/eat.png";
         public double? Minerals { get; set; } = 0;
         public double? Water { get; set; } = 0;
         public double? Proteins { get; set; } = 0;

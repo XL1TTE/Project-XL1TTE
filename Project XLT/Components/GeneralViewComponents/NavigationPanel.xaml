@@ -1,0 +1,61 @@
+﻿<UserControl x:Class="Project_XLT.Components.NavigationPanel"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:cc="clr-namespace:Project_XLT.CustomControls"
+             xmlns:local="clr-namespace:Project_XLT.Components"
+             
+             mc:Ignorable="d" 
+             d:DesignHeight="450" d:DesignWidth="180">
+    <UserControl.Resources>
+        <BitmapImage x:Key="MainPageImage" UriSource="..\..\Images\Navigation Icons\MainMenuIcon.png" />
+        <BitmapImage x:Key="NutritionPageImage" UriSource="..\..\Images\Navigation Icons\NutritionIcon.png" />
+        <BitmapImage x:Key="MenagmentPageImage" UriSource="..\..\Images\Navigation Icons\SettingsIcon.png" />
+        <BitmapImage x:Key="ExitPageImage" UriSource="..\..\Images\Navigation Icons\ExitIcon.png" />
+    </UserControl.Resources>
+    <Border Background="White" CornerRadius="15">
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="120"/>
+                <RowDefinition Height="*"/>
+            </Grid.RowDefinitions>
+            <Grid Grid.Row="0">
+                <TextBlock Text="XL1TTE" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="38" FontWeight="Bold"/> 
+            </Grid>
+            <Grid Grid.Row="1">
+                <StackPanel>
+                    <cc:NavigationRadioButton Content="Главная" 
+                             Height="30"
+                             Margin="10"
+                             Icon="{StaticResource MainPageImage}"
+                             IsChecked="True"
+                             Command="{Binding NavigateToMainMenu}"
+                             Style="{StaticResource NavigationPanelButtonStyle}"/>
+
+                    <cc:NavigationRadioButton  Content="Диеты" 
+                             Height="30"
+                             Margin="10"
+                             Icon="{StaticResource MenagmentPageImage}"
+                             Command="{Binding NavigateToDietMenu}"
+                             Style="{StaticResource NavigationPanelButtonStyle}"/>
+
+                    <cc:NavigationRadioButton Content="Питание" 
+                             Height="30"
+                             Margin="10"
+                             Icon="{StaticResource NutritionPageImage}"
+                             Command="{Binding NavigateToNutrition}"
+                             Style="{StaticResource NavigationPanelButtonStyle}"/>
+
+                    <cc:NavigationRadioButton Content="Выход" 
+                             Height="30"
+                             Margin="10"
+                             Icon="{StaticResource ExitPageImage}"
+                             Command="{Binding ExitCommand}"
+                             Style="{StaticResource NavigationPanelButtonStyle}"/>
+                </StackPanel>
+            </Grid>
+        </Grid>
+
+    </Border>
+</UserControl>

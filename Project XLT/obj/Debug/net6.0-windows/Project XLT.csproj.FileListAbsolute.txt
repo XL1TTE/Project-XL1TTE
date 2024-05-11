@@ -12,14 +12,6 @@ C:\Users\Artyom\source\repos\Project XLT\Project XLT\obj\Debug\net6.0-windows\St
 C:\Users\Artyom\source\repos\Project XLT\Project XLT\obj\Debug\net6.0-windows\Styles\NavigationPanelStyles.baml
 C:\Users\Artyom\source\repos\Project XLT\Project XLT\obj\Debug\net6.0-windows\Styles\ProgressBarStyle.baml
 C:\Users\Artyom\source\repos\Project XLT\Project XLT\obj\Debug\net6.0-windows\Styles\TextBoxStyles.baml
-C:\Users\Artyom\source\repos\Project XLT\Project XLT\obj\Debug\net6.0-windows\Components\EatenFoodPanel.g.cs
-C:\Users\Artyom\source\repos\Project XLT\Project XLT\obj\Debug\net6.0-windows\Components\EatPanel.g.cs
-C:\Users\Artyom\source\repos\Project XLT\Project XLT\obj\Debug\net6.0-windows\Components\NavigationPanel.g.cs
-C:\Users\Artyom\source\repos\Project XLT\Project XLT\obj\Debug\net6.0-windows\Components\NutritionStatPanel.g.cs
-C:\Users\Artyom\source\repos\Project XLT\Project XLT\obj\Debug\net6.0-windows\Components\NutritionTitlePanel.g.cs
-C:\Users\Artyom\source\repos\Project XLT\Project XLT\obj\Debug\net6.0-windows\Components\NutritionUserPanel.g.cs
-C:\Users\Artyom\source\repos\Project XLT\Project XLT\obj\Debug\net6.0-windows\Components\RecipesPanel.g.cs
-C:\Users\Artyom\source\repos\Project XLT\Project XLT\obj\Debug\net6.0-windows\Components\ResizeBox.g.cs
 C:\Users\Artyom\source\repos\Project XLT\Project XLT\obj\Debug\net6.0-windows\Components\SearchPopup.g.cs
 C:\Users\Artyom\source\repos\Project XLT\Project XLT\obj\Debug\net6.0-windows\MVVM\View\DietListView.g.cs
 C:\Users\Artyom\source\repos\Project XLT\Project XLT\obj\Debug\net6.0-windows\MVVM\View\GeneralView.g.cs
@@ -31,14 +23,6 @@ C:\Users\Artyom\source\repos\Project XLT\Project XLT\obj\Debug\net6.0-windows\Ge
 C:\Users\Artyom\source\repos\Project XLT\Project XLT\obj\Debug\net6.0-windows\Project XLT_MarkupCompile.cache
 C:\Users\Artyom\source\repos\Project XLT\Project XLT\obj\Debug\net6.0-windows\Project XLT_MarkupCompile.lref
 C:\Users\Artyom\source\repos\Project XLT\Project XLT\obj\Debug\net6.0-windows\App.baml
-C:\Users\Artyom\source\repos\Project XLT\Project XLT\obj\Debug\net6.0-windows\Components\EatenFoodPanel.baml
-C:\Users\Artyom\source\repos\Project XLT\Project XLT\obj\Debug\net6.0-windows\Components\EatPanel.baml
-C:\Users\Artyom\source\repos\Project XLT\Project XLT\obj\Debug\net6.0-windows\Components\NavigationPanel.baml
-C:\Users\Artyom\source\repos\Project XLT\Project XLT\obj\Debug\net6.0-windows\Components\NutritionStatPanel.baml
-C:\Users\Artyom\source\repos\Project XLT\Project XLT\obj\Debug\net6.0-windows\Components\NutritionTitlePanel.baml
-C:\Users\Artyom\source\repos\Project XLT\Project XLT\obj\Debug\net6.0-windows\Components\NutritionUserPanel.baml
-C:\Users\Artyom\source\repos\Project XLT\Project XLT\obj\Debug\net6.0-windows\Components\RecipesPanel.baml
-C:\Users\Artyom\source\repos\Project XLT\Project XLT\obj\Debug\net6.0-windows\Components\ResizeBox.baml
 C:\Users\Artyom\source\repos\Project XLT\Project XLT\obj\Debug\net6.0-windows\Components\SearchPopup.baml
 C:\Users\Artyom\source\repos\Project XLT\Project XLT\obj\Debug\net6.0-windows\MVVM\View\DietListView.baml
 C:\Users\Artyom\source\repos\Project XLT\Project XLT\obj\Debug\net6.0-windows\MVVM\View\GeneralView.baml
@@ -59,3 +43,20 @@ C:\Users\Artyom\source\repos\Project XLT\Project XLT\obj\Debug\net6.0-windows\re
 C:\Users\Artyom\source\repos\Project XLT\Project XLT\obj\Debug\net6.0-windows\Project XLT.pdb
 C:\Users\Artyom\source\repos\Project XLT\Project XLT\obj\Debug\net6.0-windows\Project XLT.genruntimeconfig.cache
 C:\Users\Artyom\source\repos\Project XLT\Project XLT\obj\Debug\net6.0-windows\ref\Project XLT.dll
+C:\Users\Artyom\source\repos\Project XLT\Project XLT\obj\Debug\net6.0-windows\Components\GeneralComponents\ResizeBox.g.cs
+C:\Users\Artyom\source\repos\Project XLT\Project XLT\obj\Debug\net6.0-windows\Components\GeneralViewComponents\NavigationPanel.g.cs
+C:\Users\Artyom\source\repos\Project XLT\Project XLT\obj\Debug\net6.0-windows\Components\NutritionViewComponents\EatenFoodPanel.g.cs
+C:\Users\Artyom\source\repos\Project XLT\Project XLT\obj\Debug\net6.0-windows\Components\NutritionViewComponents\EatPanel.g.cs
+C:\Users\Artyom\source\repos\Project XLT\Project XLT\obj\Debug\net6.0-windows\Components\NutritionViewComponents\NutritionStatPanel.g.cs
+C:\Users\Artyom\source\repos\Project XLT\Project XLT\obj\Debug\net6.0-windows\Components\NutritionViewComponents\NutritionTitlePanel.g.cs
+C:\Users\Artyom\source\repos\Project XLT\Project XLT\obj\Debug\net6.0-windows\Components\NutritionViewComponents\NutritionUserPanel.g.cs
+C:\Users\Artyom\source\repos\Project XLT\Project XLT\obj\Debug\net6.0-windows\Components\NutritionViewComponents\RecipesPanel.g.cs
+C:\Users\Artyom\source\repos\Project XLT\Project XLT\obj\Debug\net6.0-windows\Components\GeneralComponents\ResizeBox.baml
+C:\Users\Artyom\source\repos\Project XLT\Project XLT\obj\Debug\net6.0-windows\Components\GeneralViewComponents\NavigationPanel.baml
+C:\Users\Artyom\source\repos\Project XLT\Project XLT\obj\Debug\net6.0-windows\Components\NutritionViewComponents\EatenFoodPanel.baml
+C:\Users\Artyom\source\repos\Project XLT\Project XLT\obj\Debug\net6.0-windows\Components\NutritionViewComponents\EatPanel.baml
+C:\Users\Artyom\source\repos\Project XLT\Project XLT\obj\Debug\net6.0-windows\Components\NutritionViewComponents\NutritionStatPanel.baml
+C:\Users\Artyom\source\repos\Project XLT\Project XLT\obj\Debug\net6.0-windows\Components\NutritionViewComponents\NutritionTitlePanel.baml
+C:\Users\Artyom\source\repos\Project XLT\Project XLT\obj\Debug\net6.0-windows\Components\NutritionViewComponents\NutritionUserPanel.baml
+C:\Users\Artyom\source\repos\Project XLT\Project XLT\obj\Debug\net6.0-windows\Components\NutritionViewComponents\RecipesPanel.baml
+C:\Users\Artyom\source\repos\Project XLT\Project XLT\obj\Debug\net6.0-windows\Styles\Images and Icons\ImagesAndIcons.baml

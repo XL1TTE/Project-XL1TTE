@@ -53,7 +53,7 @@ namespace Project_XLT.Components {
                 return;
             }
             _contentLoaded = true;
-            System.Uri resourceLocater = new System.Uri("/Project XLT;component/components/navigationpanel.xaml", System.UriKind.Relative);
+            System.Uri resourceLocater = new System.Uri("/Project XLT;V1.0.0.0;component/components/navigationpanel.xaml", System.UriKind.Relative);
             
             #line 1 "..\..\..\..\Components\NavigationPanel.xaml"
             System.Windows.Application.LoadComponent(this, resourceLocater);

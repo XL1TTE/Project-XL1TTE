@@ -1,19 +1,20 @@
 ﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
-                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                    xmlns:cc="clr-namespace:Project_XLT.CustomControls">
     <Style BasedOn="{StaticResource {x:Type RadioButton}}"
-           TargetType="{x:Type RadioButton}"
+           TargetType="{x:Type cc:NavigationRadioButton}"
            x:Key="NavigationPanelButtonStyle">
         <Style.Setters>
             <Setter Property="Template">
                 <Setter.Value>
 
-                    <ControlTemplate TargetType="RadioButton">
+                    <ControlTemplate TargetType="cc:NavigationRadioButton">
                         
                         <Border CornerRadius="15"
                                     Height="30"
                                 Background="{TemplateBinding Property=Background}">
                             <StackPanel Orientation="Horizontal">
-                                <Image Source="{Binding Tag, RelativeSource={RelativeSource TemplatedParent}}" 
+                                <Image Source="{TemplateBinding Icon}" 
                                        Height="24"
                                        Width="24"
                                        Stretch="Fill"
