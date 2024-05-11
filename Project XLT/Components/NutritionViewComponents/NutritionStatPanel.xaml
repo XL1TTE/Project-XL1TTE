@@ -40,8 +40,8 @@
                                 <TextBlock Text="{Binding CurrentDateTime, Converter={StaticResource DateTimeToStringConvertor}}"
                                            FontWeight="Bold"
                                            Style="{StaticResource NunitoFontStyle}"
-                                       VerticalAlignment="Center"
-                                       HorizontalAlignment="Center"/>
+                                           VerticalAlignment="Center"
+                                           HorizontalAlignment="Center"/>
                                 <Image Source="{StaticResource ArrowDownIcon}"
                                        Height="15"
                                        Margin="10 0 0 0"

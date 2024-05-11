@@ -32,7 +32,9 @@
   </ItemGroup>
 
   <ItemGroup>
+    <PackageReference Include="FirebaseAuthentication.net" Version="4.1.0" />
     <PackageReference Include="Microsoft.Extensions.DependencyInjection" Version="8.0.0" />
+    <PackageReference Include="Microsoft.Extensions.Hosting" Version="8.0.0" />
     <PackageReference Include="Microsoft.Xaml.Behaviors.Wpf" Version="1.1.77" />
   </ItemGroup>
 
@@ -55,6 +57,12 @@
     <Resource Include="Images\UI icons\search.png" />
     <Resource Include="Images\Navigation Icons\SettingsIcon.png" />
     <Resource Include="Images\UserImage.jpg" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Update="Config\FirebaseConfig.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
   </ItemGroup>
 
 </Project>
