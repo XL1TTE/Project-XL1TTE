@@ -11,7 +11,7 @@ namespace Project_XLT.Services
     {
         FirebaseAuthClient AuthClient { get; }
         public Task<User> LogIn(string mail, string password);
-        public Task LogOut();
+        public void LogOut();
         public Task<User> Register(string mail, string password);
     }
     public class FireBaseAuthService : IAuthService
@@ -29,7 +29,7 @@ namespace Project_XLT.Services
             return UserCredentials.User;
         }
 
-        public async Task LogOut()
+        public void LogOut()
         {
              AuthClient.SignOut();
         }

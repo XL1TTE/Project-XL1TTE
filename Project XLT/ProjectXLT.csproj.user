@@ -1,0 +1,123 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="Current" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <_LastSelectedProfileId>C:\Users\Artyom\source\repos\ProjectXLT\Project XLT\Properties\PublishProfiles\FolderProfile.pubxml</_LastSelectedProfileId>
+  </PropertyGroup>
+  <ItemGroup>
+    <ApplicationDefinition Update="App.xaml">
+      <SubType>Designer</SubType>
+    </ApplicationDefinition>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Update="Components\NutritionViewComponents\EatenFoodPanel.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Components\NutritionViewComponents\EatPanel.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Components\GeneralViewComponents\NavigationPanel.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Components\NutritionViewComponents\NutritionStatPanel.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Components\NutritionViewComponents\NutritionTitlePanel.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Components\NutritionViewComponents\NutritionUserPanel.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Components\NutritionViewComponents\RecipesPanel.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Components\GeneralComponents\ResizeBox.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Components\SearchPopup.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="MVVM\View\DietListView.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="MVVM\View\GeneralView.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="MVVM\View\MainMenuView.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="MVVM\View\NutritionView.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Page Update="Components\NutritionViewComponents\EatenFoodPanel.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Components\NutritionViewComponents\EatPanel.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Components\GeneralViewComponents\NavigationPanel.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Components\NutritionViewComponents\NutritionStatPanel.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Components\NutritionViewComponents\NutritionTitlePanel.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Components\NutritionViewComponents\NutritionUserPanel.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Components\NutritionViewComponents\RecipesPanel.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Components\GeneralComponents\ResizeBox.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Components\SearchPopup.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="MVVM\View\DietListView.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="MVVM\View\GeneralView.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="MVVM\View\MainMenuView.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="MVVM\View\MainWindow.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="MVVM\View\NutritionView.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Styles\ButtonWithTooltipStyle.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Styles\CircularButtonStyle.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Styles\Images and Icons\ImagesAndIcons.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Styles\LProgressBarStyle.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Styles\NavigationPanelStyles.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Styles\ProgressBarStyle.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Styles\ResizerStyle.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Styles\TextBoxStyles.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Themes\Generic.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+  </ItemGroup>
+</Project>

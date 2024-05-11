@@ -40,7 +40,7 @@ namespace Project_XLT.CustomControls
         private void Resizer_DragDelta(object sender, DragDeltaEventArgs e)
         {
             
-            Grid ItemToResize = this.Parent as Grid;
+            Grid? ItemToResize = this.Parent as Grid;
             if(ItemToResize != null)
             {
                 switch (ResizerDirection)

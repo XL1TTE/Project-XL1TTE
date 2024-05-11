@@ -66,7 +66,7 @@ namespace Project_XLT.Components {
                 return;
             }
             _contentLoaded = true;
-            System.Uri resourceLocater = new System.Uri("/Project XLT;component/components/nutritionviewcomponents/eatenfoodpanel.xaml", System.UriKind.Relative);
+            System.Uri resourceLocater = new System.Uri("/ProjectXLT;component/components/nutritionviewcomponents/eatenfoodpanel.xaml", System.UriKind.Relative);
             
             #line 1 "..\..\..\..\..\Components\NutritionViewComponents\EatenFoodPanel.xaml"
             System.Windows.Application.LoadComponent(this, resourceLocater);

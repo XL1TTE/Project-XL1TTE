@@ -14,8 +14,8 @@ namespace Project_XLT.MVVM.ViewModels
 {
     public class DietListViewModel: ViewModelBase
     {
-        private InavigationService _navigation;
-        public InavigationService Navigation
+        private InavigationService? _navigation;
+        public InavigationService? Navigation
         {
             get => _navigation;
             set
@@ -25,8 +25,8 @@ namespace Project_XLT.MVVM.ViewModels
             }
         }
 
-        private DietBaseModel _dietBaseModel;
-        public DietBaseModel DietBaseModel
+        private DietBaseModel? _dietBaseModel;
+        public DietBaseModel? DietBaseModel
         {
             get => _dietBaseModel;
             set
@@ -38,7 +38,7 @@ namespace Project_XLT.MVVM.ViewModels
         
 
 
-        private ObservableCollection<DietModel> _dietList;
+        private ObservableCollection<DietModel> _dietList = new ObservableCollection<DietModel>();
         public ObservableCollection<DietModel> DietList
         {
             get => _dietList;
@@ -50,8 +50,8 @@ namespace Project_XLT.MVVM.ViewModels
         }
 
 
-        private DietModel _pickedDiet;
-        public DietModel PickedDiet
+        private DietModel? _pickedDiet;
+        public DietModel? PickedDiet
         {
             get => _pickedDiet;
             set
@@ -75,17 +75,18 @@ namespace Project_XLT.MVVM.ViewModels
 
         }
 
-        private void PickDietFunc(object o)
+        private void PickDietFunc(object? o)
         {
-            RoutedEventArgs args = o as RoutedEventArgs;
-            var clickedItem = args.OriginalSource as RadioButton;
+            RoutedEventArgs? args = o as RoutedEventArgs;
+            var clickedItem = args?.OriginalSource as RadioButton;
             if (clickedItem != null)
             {
 
-                DietModel diet = clickedItem.DataContext as DietModel;
+                DietModel? diet = clickedItem.DataContext as DietModel;
 
                 PickedDiet = diet;
-                DietBaseModel.ChoosenDiet = PickedDiet;
+                if(DietBaseModel != null)
+                    DietBaseModel.ChoosenDiet = PickedDiet;
 
                 foreach (DietModel dietModel in DietList)
                 {

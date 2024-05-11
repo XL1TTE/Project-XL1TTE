@@ -42,12 +42,10 @@ namespace Project_XLT
                     services.AddSingleton<PeoplesDataBase>();
                     services.AddSingleton<DietBaseModel>();
                     // FireBaseAuthConfiguration
-                    string json = File.ReadAllText("Config/FirebaseConfig.json");
-                    FirebaseCredentials? firebaseCredentials = JsonConvert.DeserializeObject<FirebaseCredentials>(json);
                     services.AddSingleton(new FirebaseAuthClient(new FirebaseAuthConfig
                     {
-                        ApiKey = firebaseCredentials?.FIREBASE_API_KEY,
-                        AuthDomain = firebaseCredentials?.FIREBASE_AUTH_DOMAIN,
+                        ApiKey = "op6-test.firebaseapp.com",
+                        AuthDomain = "AIzaSyAQA4nl2Jkw7Ah7SIJevhGRj1z6GDx21cw",
                         Providers = new FirebaseAuthProvider[]
                         {
                             new EmailProvider(),
@@ -60,7 +58,7 @@ namespace Project_XLT
 
         }
 
-        protected override async void OnStartup(StartupEventArgs e)
+        protected override void OnStartup(StartupEventArgs e)
         {
             var MainWindow = _host.Services.GetRequiredService<MainWindow>();
             MainWindow.Show();

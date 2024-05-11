@@ -6507,11 +6507,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Artyom\\source\\repos\\Project XLT\\Project XLT\\Project XLT.csproj",
-      "projectName": "Project XLT",
-      "projectPath": "C:\\Users\\Artyom\\source\\repos\\Project XLT\\Project XLT\\Project XLT.csproj",
+      "projectUniqueName": "C:\\Users\\Artyom\\source\\repos\\ProjectXLT\\Project XLT\\ProjectXLT.csproj",
+      "projectName": "ProjectXLT",
+      "projectPath": "C:\\Users\\Artyom\\source\\repos\\ProjectXLT\\Project XLT\\ProjectXLT.csproj",
       "packagesPath": "C:\\Users\\Artyom\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Artyom\\source\\repos\\Project XLT\\Project XLT\\obj\\",
+      "outputPath": "C:\\Users\\Artyom\\source\\repos\\ProjectXLT\\Project XLT\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Artyom\\AppData\\Roaming\\NuGet\\NuGet.Config",

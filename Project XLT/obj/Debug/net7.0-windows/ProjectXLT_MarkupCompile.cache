@@ -1,0 +1,20 @@
+﻿ProjectXLT
+
+
+winexe
+C#
+.cs
+C:\Users\Artyom\source\repos\ProjectXLT\Project XLT\obj\Debug\net7.0-windows\
+Project_XLT
+none
+false
+TRACE;DEBUG;NET;NET7_0;NETCOREAPP
+C:\Users\Artyom\source\repos\ProjectXLT\Project XLT\App.xaml
+23-1014510054
+
+38-1851744628
+228-438332319
+Components\GeneralComponents\ResizeBox.xaml;Components\GeneralViewComponents\NavigationPanel.xaml;Components\NutritionViewComponents\EatenFoodPanel.xaml;Components\NutritionViewComponents\EatPanel.xaml;Components\NutritionViewComponents\NutritionStatPanel.xaml;Components\NutritionViewComponents\NutritionTitlePanel.xaml;Components\NutritionViewComponents\NutritionUserPanel.xaml;Components\NutritionViewComponents\RecipesPanel.xaml;Components\SearchPopup.xaml;MVVM\View\DietListView.xaml;MVVM\View\GeneralView.xaml;MVVM\View\MainMenuView.xaml;MVVM\View\MainWindow.xaml;MVVM\View\NutritionView.xaml;Styles\ButtonWithTooltipStyle.xaml;Styles\CircularButtonStyle.xaml;Styles\Images and Icons\ImagesAndIcons.xaml;Styles\LProgressBarStyle.xaml;Styles\NavigationPanelStyles.xaml;Styles\ProgressBarStyle.xaml;Styles\ResizerStyle.xaml;Styles\TextBoxStyles.xaml;Themes\Generic.xaml;
+
+False
+

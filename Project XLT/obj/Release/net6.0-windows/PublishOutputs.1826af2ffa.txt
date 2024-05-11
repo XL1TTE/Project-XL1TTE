@@ -1,0 +1,8 @@
+C:\Users\Artyom\source\repos\Project XLT\Project XLT\bin\Release\net6.0-windows\publish\Project XLT.exe
+C:\Users\Artyom\source\repos\Project XLT\Project XLT\bin\Release\net6.0-windows\publish\Project XLT.dll
+C:\Users\Artyom\source\repos\Project XLT\Project XLT\bin\Release\net6.0-windows\publish\Project XLT.runtimeconfig.json
+C:\Users\Artyom\source\repos\Project XLT\Project XLT\bin\Release\net6.0-windows\publish\Project XLT.pdb
+C:\Users\Artyom\source\repos\Project XLT\Project XLT\bin\Release\net6.0-windows\publish\runtimes\win\lib\net6.0\System.Diagnostics.EventLog.Messages.dll
+C:\Users\Artyom\source\repos\Project XLT\Project XLT\bin\Release\net6.0-windows\publish\runtimes\win\lib\net6.0\System.Diagnostics.EventLog.dll
+C:\Users\Artyom\source\repos\Project XLT\Project XLT\bin\Release\net6.0-windows\publish\runtimes\browser\lib\net6.0\System.Text.Encodings.Web.dll
+C:\Users\Artyom\source\repos\Project XLT\Project XLT\bin\Release\net6.0-windows\publish\Project XLT.deps.json

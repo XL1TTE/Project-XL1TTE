@@ -11,8 +11,8 @@ namespace Project_XLT.MVVM.ViewModels
 {
     public class MainWindowViewModel: ViewModelBase
     {
-        private InavigationService _navigation;
-        public InavigationService Navigation
+        private InavigationService? _navigation;
+        public InavigationService? Navigation
         {
             get => _navigation;
             set

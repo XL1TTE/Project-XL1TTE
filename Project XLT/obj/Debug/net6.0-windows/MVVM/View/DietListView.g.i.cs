@@ -66,7 +66,7 @@ namespace Project_XLT.MVVM.View {
                 return;
             }
             _contentLoaded = true;
-            System.Uri resourceLocater = new System.Uri("/Project XLT;component/mvvm/view/dietlistview.xaml", System.UriKind.Relative);
+            System.Uri resourceLocater = new System.Uri("/ProjectXLT;component/mvvm/view/dietlistview.xaml", System.UriKind.Relative);
             
             #line 1 "..\..\..\..\..\MVVM\View\DietListView.xaml"
             System.Windows.Application.LoadComponent(this, resourceLocater);

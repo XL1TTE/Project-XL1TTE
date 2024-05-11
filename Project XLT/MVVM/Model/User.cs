@@ -8,6 +8,6 @@ namespace Project_XLT.MVVM.Model
 {
     public class User
     {
-        public Dictionary<string, UserData> UserDataByTime { get; set; }
+        public Dictionary<string, UserData>? UserDataByTime { get; set; }
     }
 }

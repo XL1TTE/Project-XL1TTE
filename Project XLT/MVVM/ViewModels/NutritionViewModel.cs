@@ -16,8 +16,8 @@ namespace Project_XLT.MVVM.ViewModels
 {
     public class NutritionViewModel : ViewModelBase
     {
-        private InavigationService _navigation;
-        public InavigationService Navigation
+        private InavigationService? _navigation;
+        public InavigationService? Navigation
         {
             get => _navigation;
             set
@@ -129,7 +129,7 @@ namespace Project_XLT.MVVM.ViewModels
             }
         }
 
-        private ObservableCollection<Product> _foodList;
+        private ObservableCollection<Product> _foodList = new ObservableCollection<Product>();
         public ObservableCollection<Product> FoodList
         {
             get => _foodList;
@@ -141,7 +141,7 @@ namespace Project_XLT.MVVM.ViewModels
         }
 
 
-        private ObservableCollection<Person> _peoplesDataBase;
+        private ObservableCollection<Person> _peoplesDataBase = new ObservableCollection<Person>();
         public ObservableCollection<Person> PeoplesDataBase
         {
             get => _peoplesDataBase;
@@ -153,7 +153,7 @@ namespace Project_XLT.MVVM.ViewModels
         }
 
 
-        private string _searchPeopleFieldText;
+        private string _searchPeopleFieldText = "";
         public string SearchPeopleFieldText
         {
             get => _searchPeopleFieldText;
@@ -165,7 +165,7 @@ namespace Project_XLT.MVVM.ViewModels
             }
         }
 
-        private string _searchFoodFieldText;
+        private string _searchFoodFieldText = "";
         public string SearchFoodFieldText
         {
             get => _searchFoodFieldText;
@@ -202,8 +202,8 @@ namespace Project_XLT.MVVM.ViewModels
         }
 
 
-        private DietBaseModel _dietBaseModel;
-        public DietBaseModel DietBaseModel
+        private DietBaseModel? _dietBaseModel;
+        public DietBaseModel? DietBaseModel
         {
             get => _dietBaseModel;
             set
@@ -243,24 +243,30 @@ namespace Project_XLT.MVVM.ViewModels
             //Food Commands
             AddFoodCommand = new RelayCommand(o =>
             {
-                RoutedEventArgs args = o as RoutedEventArgs;
-                var clickedItem = args.OriginalSource as Button;
+                RoutedEventArgs? args = o as RoutedEventArgs;
+                var clickedItem = args?.OriginalSource as Button;
                 if (clickedItem != null)
                 {
-                    Product product = clickedItem.DataContext as Product;
-                    EatenFoodList.Add(product);
-                    ColoriesInbasket += product.Colories;
+                    Product? product = clickedItem.DataContext as Product;
+                    if(product != null)
+                    {
+                        EatenFoodList.Add(product);
+                        ColoriesInbasket += product.Colories;
+                    }
                 }
             }, o => true);
             RemoveFoodCommand = new RelayCommand(o =>
             {
-                RoutedEventArgs args = o as RoutedEventArgs;
-                var clickedItem = args.OriginalSource as Button;
+                RoutedEventArgs? args = o as RoutedEventArgs;
+                var clickedItem = args?.OriginalSource as Button;
                 if (clickedItem != null)
                 {
-                    Product product = clickedItem.DataContext as Product;
-                    EatenFoodList.Remove(product);
-                    ColoriesInbasket -= product.Colories;
+                    Product? product = clickedItem.DataContext as Product;
+                    if(product != null)
+                    {
+                        EatenFoodList.Remove(product);
+                        ColoriesInbasket -= product.Colories;
+                    }
                 }
 
             }, o=> true);

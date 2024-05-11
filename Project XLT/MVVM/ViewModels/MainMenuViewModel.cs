@@ -10,8 +10,8 @@ namespace Project_XLT.MVVM.ViewModels
 {
     public class MainMenuViewModel: ViewModelBase
     {
-        private InavigationService _navigation;
-        public InavigationService Navigation
+        private InavigationService? _navigation;
+        public InavigationService? Navigation
         {
             get => _navigation;
             set
@@ -22,8 +22,8 @@ namespace Project_XLT.MVVM.ViewModels
         }
 
 
-        private string _test;
-        public string Test
+        private string? _test;
+        public string? Test
         {
             get => _test;
             set

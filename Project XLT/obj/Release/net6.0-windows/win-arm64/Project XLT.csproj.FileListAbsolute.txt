@@ -1,0 +1,24 @@
+C:\Users\Artyom\source\repos\Project XLT\Project XLT\obj\Release\net6.0-windows\win-arm64\Project XLT.csproj.AssemblyReference.cache
+C:\Users\Artyom\source\repos\Project XLT\Project XLT\obj\Release\net6.0-windows\win-arm64\Styles\ButtonWithTooltipStyle.baml
+C:\Users\Artyom\source\repos\Project XLT\Project XLT\obj\Release\net6.0-windows\win-arm64\Styles\CircularButtonStyle.baml
+C:\Users\Artyom\source\repos\Project XLT\Project XLT\obj\Release\net6.0-windows\win-arm64\Styles\Images and Icons\ImagesAndIcons.baml
+C:\Users\Artyom\source\repos\Project XLT\Project XLT\obj\Release\net6.0-windows\win-arm64\Styles\ProgressBarStyle.baml
+C:\Users\Artyom\source\repos\Project XLT\Project XLT\obj\Release\net6.0-windows\win-arm64\Styles\TextBoxStyles.baml
+C:\Users\Artyom\source\repos\Project XLT\Project XLT\obj\Release\net6.0-windows\win-arm64\Components\GeneralComponents\ResizeBox.g.cs
+C:\Users\Artyom\source\repos\Project XLT\Project XLT\obj\Release\net6.0-windows\win-arm64\Components\GeneralViewComponents\NavigationPanel.g.cs
+C:\Users\Artyom\source\repos\Project XLT\Project XLT\obj\Release\net6.0-windows\win-arm64\Components\NutritionViewComponents\EatenFoodPanel.g.cs
+C:\Users\Artyom\source\repos\Project XLT\Project XLT\obj\Release\net6.0-windows\win-arm64\Components\NutritionViewComponents\EatPanel.g.cs
+C:\Users\Artyom\source\repos\Project XLT\Project XLT\obj\Release\net6.0-windows\win-arm64\Components\NutritionViewComponents\NutritionStatPanel.g.cs
+C:\Users\Artyom\source\repos\Project XLT\Project XLT\obj\Release\net6.0-windows\win-arm64\Components\NutritionViewComponents\NutritionTitlePanel.g.cs
+C:\Users\Artyom\source\repos\Project XLT\Project XLT\obj\Release\net6.0-windows\win-arm64\Components\NutritionViewComponents\NutritionUserPanel.g.cs
+C:\Users\Artyom\source\repos\Project XLT\Project XLT\obj\Release\net6.0-windows\win-arm64\Components\NutritionViewComponents\RecipesPanel.g.cs
+C:\Users\Artyom\source\repos\Project XLT\Project XLT\obj\Release\net6.0-windows\win-arm64\Components\SearchPopup.g.cs
+C:\Users\Artyom\source\repos\Project XLT\Project XLT\obj\Release\net6.0-windows\win-arm64\MVVM\View\DietListView.g.cs
+C:\Users\Artyom\source\repos\Project XLT\Project XLT\obj\Release\net6.0-windows\win-arm64\MVVM\View\GeneralView.g.cs
+C:\Users\Artyom\source\repos\Project XLT\Project XLT\obj\Release\net6.0-windows\win-arm64\MVVM\View\MainMenuView.g.cs
+C:\Users\Artyom\source\repos\Project XLT\Project XLT\obj\Release\net6.0-windows\win-arm64\MVVM\View\MainWindow.g.cs
+C:\Users\Artyom\source\repos\Project XLT\Project XLT\obj\Release\net6.0-windows\win-arm64\MVVM\View\NutritionView.g.cs
+C:\Users\Artyom\source\repos\Project XLT\Project XLT\obj\Release\net6.0-windows\win-arm64\App.g.cs
+C:\Users\Artyom\source\repos\Project XLT\Project XLT\obj\Release\net6.0-windows\win-arm64\GeneratedInternalTypeHelper.g.cs
+C:\Users\Artyom\source\repos\Project XLT\Project XLT\obj\Release\net6.0-windows\win-arm64\Project XLT_MarkupCompile.cache
+C:\Users\Artyom\source\repos\Project XLT\Project XLT\obj\Release\net6.0-windows\win-arm64\Project XLT_MarkupCompile.lref

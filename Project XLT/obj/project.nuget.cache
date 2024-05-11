@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "WzkmDa7x9kb9jFOPmVU0tQAfeeJqwzGqheLORbCUKddYAbiNBRyfNRuNOuXxFSg7ZCHWyYEoBSR4Apt3DvLumQ==",
+  "dgSpecHash": "12v3q6mZbLVHNGXJGcbYlCaY6SczURFxdLnKB5sx6PeBaL8GJRpW/3/X3DKOLPB5MZDt9BhrHtqWyzA9G+rN4w==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Artyom\\source\\repos\\Project XLT\\Project XLT\\Project XLT.csproj",
+  "projectFilePath": "C:\\Users\\Artyom\\source\\repos\\ProjectXLT\\Project XLT\\ProjectXLT.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Artyom\\.nuget\\packages\\costura.fody\\5.7.0\\costura.fody.5.7.0.nupkg.sha512",
     "C:\\Users\\Artyom\\.nuget\\packages\\firebaseauthentication.net\\4.1.0\\firebaseauthentication.net.4.1.0.nupkg.sha512",

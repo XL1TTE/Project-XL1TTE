@@ -18,8 +18,13 @@ namespace Project_XLT.Convertors
 
         public object ConvertBack(object value, Type targetType, object parameter, CultureInfo culture)
         {
-            DateTime DateTimeFormat = DateTime.ParseExact(value.ToString(), "dd MMMM yyyy", CultureInfo.InvariantCulture);
-            return DateTimeFormat;
+            string? input = value.ToString();
+            if (input != null)
+            {
+                DateTime DateTimeFormat = DateTime.ParseExact(input, "dd MMMM yyyy", CultureInfo.InvariantCulture);
+                return DateTimeFormat;
+            }
+            return DateTime.Now;
         }
     }
 }

@@ -9,8 +9,8 @@ namespace Project_XLT.MVVM.Model
 {
     public class DietBaseModel : ObservableObject
     {
-        private DietModel _choosenDiet;
-        public DietModel ChoosenDiet
+        private DietModel? _choosenDiet;
+        public DietModel? ChoosenDiet
         {
             get => _choosenDiet;
             set
@@ -41,10 +41,6 @@ namespace Project_XLT.MVVM.Model
             DietList = dietBase;
         }
 
-        public DietBaseModel()
-        {
-
-        }
     }
 
     public class DietModel: ObservableObject
