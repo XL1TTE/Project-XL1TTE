@@ -3,9 +3,6 @@ C:\Users\Artyom\source\repos\Project XLT\Project XLT\bin\Debug\net6.0-windows\Pr
 C:\Users\Artyom\source\repos\Project XLT\Project XLT\bin\Debug\net6.0-windows\Project XLT.runtimeconfig.json
 C:\Users\Artyom\source\repos\Project XLT\Project XLT\bin\Debug\net6.0-windows\Project XLT.dll
 C:\Users\Artyom\source\repos\Project XLT\Project XLT\bin\Debug\net6.0-windows\Project XLT.pdb
-C:\Users\Artyom\source\repos\Project XLT\Project XLT\bin\Debug\net6.0-windows\Microsoft.Extensions.DependencyInjection.dll
-C:\Users\Artyom\source\repos\Project XLT\Project XLT\bin\Debug\net6.0-windows\Microsoft.Extensions.DependencyInjection.Abstractions.dll
-C:\Users\Artyom\source\repos\Project XLT\Project XLT\bin\Debug\net6.0-windows\Microsoft.Xaml.Behaviors.dll
 C:\Users\Artyom\source\repos\Project XLT\Project XLT\obj\Debug\net6.0-windows\Project XLT.csproj.AssemblyReference.cache
 C:\Users\Artyom\source\repos\Project XLT\Project XLT\obj\Debug\net6.0-windows\Styles\ButtonWithTooltipStyle.baml
 C:\Users\Artyom\source\repos\Project XLT\Project XLT\obj\Debug\net6.0-windows\Styles\CircularButtonStyle.baml
@@ -60,38 +57,8 @@ C:\Users\Artyom\source\repos\Project XLT\Project XLT\obj\Debug\net6.0-windows\Co
 C:\Users\Artyom\source\repos\Project XLT\Project XLT\obj\Debug\net6.0-windows\Components\NutritionViewComponents\NutritionUserPanel.baml
 C:\Users\Artyom\source\repos\Project XLT\Project XLT\obj\Debug\net6.0-windows\Components\NutritionViewComponents\RecipesPanel.baml
 C:\Users\Artyom\source\repos\Project XLT\Project XLT\obj\Debug\net6.0-windows\Styles\Images and Icons\ImagesAndIcons.baml
-C:\Users\Artyom\source\repos\Project XLT\Project XLT\bin\Debug\net6.0-windows\Firebase.Auth.dll
-C:\Users\Artyom\source\repos\Project XLT\Project XLT\bin\Debug\net6.0-windows\Microsoft.Extensions.Configuration.dll
-C:\Users\Artyom\source\repos\Project XLT\Project XLT\bin\Debug\net6.0-windows\Microsoft.Extensions.Configuration.Abstractions.dll
-C:\Users\Artyom\source\repos\Project XLT\Project XLT\bin\Debug\net6.0-windows\Microsoft.Extensions.Configuration.Binder.dll
-C:\Users\Artyom\source\repos\Project XLT\Project XLT\bin\Debug\net6.0-windows\Microsoft.Extensions.Configuration.CommandLine.dll
-C:\Users\Artyom\source\repos\Project XLT\Project XLT\bin\Debug\net6.0-windows\Microsoft.Extensions.Configuration.EnvironmentVariables.dll
-C:\Users\Artyom\source\repos\Project XLT\Project XLT\bin\Debug\net6.0-windows\Microsoft.Extensions.Configuration.FileExtensions.dll
-C:\Users\Artyom\source\repos\Project XLT\Project XLT\bin\Debug\net6.0-windows\Microsoft.Extensions.Configuration.Json.dll
-C:\Users\Artyom\source\repos\Project XLT\Project XLT\bin\Debug\net6.0-windows\Microsoft.Extensions.Configuration.UserSecrets.dll
-C:\Users\Artyom\source\repos\Project XLT\Project XLT\bin\Debug\net6.0-windows\Microsoft.Extensions.Diagnostics.dll
-C:\Users\Artyom\source\repos\Project XLT\Project XLT\bin\Debug\net6.0-windows\Microsoft.Extensions.Diagnostics.Abstractions.dll
-C:\Users\Artyom\source\repos\Project XLT\Project XLT\bin\Debug\net6.0-windows\Microsoft.Extensions.FileProviders.Abstractions.dll
-C:\Users\Artyom\source\repos\Project XLT\Project XLT\bin\Debug\net6.0-windows\Microsoft.Extensions.FileProviders.Physical.dll
-C:\Users\Artyom\source\repos\Project XLT\Project XLT\bin\Debug\net6.0-windows\Microsoft.Extensions.FileSystemGlobbing.dll
-C:\Users\Artyom\source\repos\Project XLT\Project XLT\bin\Debug\net6.0-windows\Microsoft.Extensions.Hosting.dll
-C:\Users\Artyom\source\repos\Project XLT\Project XLT\bin\Debug\net6.0-windows\Microsoft.Extensions.Hosting.Abstractions.dll
-C:\Users\Artyom\source\repos\Project XLT\Project XLT\bin\Debug\net6.0-windows\Microsoft.Extensions.Logging.dll
-C:\Users\Artyom\source\repos\Project XLT\Project XLT\bin\Debug\net6.0-windows\Microsoft.Extensions.Logging.Abstractions.dll
-C:\Users\Artyom\source\repos\Project XLT\Project XLT\bin\Debug\net6.0-windows\Microsoft.Extensions.Logging.Configuration.dll
-C:\Users\Artyom\source\repos\Project XLT\Project XLT\bin\Debug\net6.0-windows\Microsoft.Extensions.Logging.Console.dll
-C:\Users\Artyom\source\repos\Project XLT\Project XLT\bin\Debug\net6.0-windows\Microsoft.Extensions.Logging.Debug.dll
-C:\Users\Artyom\source\repos\Project XLT\Project XLT\bin\Debug\net6.0-windows\Microsoft.Extensions.Logging.EventLog.dll
-C:\Users\Artyom\source\repos\Project XLT\Project XLT\bin\Debug\net6.0-windows\Microsoft.Extensions.Logging.EventSource.dll
-C:\Users\Artyom\source\repos\Project XLT\Project XLT\bin\Debug\net6.0-windows\Microsoft.Extensions.Options.dll
-C:\Users\Artyom\source\repos\Project XLT\Project XLT\bin\Debug\net6.0-windows\Microsoft.Extensions.Options.ConfigurationExtensions.dll
-C:\Users\Artyom\source\repos\Project XLT\Project XLT\bin\Debug\net6.0-windows\Microsoft.Extensions.Primitives.dll
-C:\Users\Artyom\source\repos\Project XLT\Project XLT\bin\Debug\net6.0-windows\Newtonsoft.Json.dll
-C:\Users\Artyom\source\repos\Project XLT\Project XLT\bin\Debug\net6.0-windows\System.Diagnostics.DiagnosticSource.dll
-C:\Users\Artyom\source\repos\Project XLT\Project XLT\bin\Debug\net6.0-windows\System.Diagnostics.EventLog.dll
-C:\Users\Artyom\source\repos\Project XLT\Project XLT\bin\Debug\net6.0-windows\System.Text.Encodings.Web.dll
-C:\Users\Artyom\source\repos\Project XLT\Project XLT\bin\Debug\net6.0-windows\System.Text.Json.dll
 C:\Users\Artyom\source\repos\Project XLT\Project XLT\bin\Debug\net6.0-windows\runtimes\win\lib\net6.0\System.Diagnostics.EventLog.Messages.dll
 C:\Users\Artyom\source\repos\Project XLT\Project XLT\bin\Debug\net6.0-windows\runtimes\win\lib\net6.0\System.Diagnostics.EventLog.dll
 C:\Users\Artyom\source\repos\Project XLT\Project XLT\bin\Debug\net6.0-windows\runtimes\browser\lib\net6.0\System.Text.Encodings.Web.dll
 C:\Users\Artyom\source\repos\Project XLT\Project XLT\bin\Debug\net6.0-windows\Config\FirebaseConfig.json
+C:\Users\Artyom\source\repos\Project XLT\Project XLT\obj\Debug\net6.0-windows\Project XLT.csproj.Fody.CopyLocal.cache
