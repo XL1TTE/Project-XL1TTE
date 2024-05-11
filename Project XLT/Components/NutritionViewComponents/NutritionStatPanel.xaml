@@ -5,10 +5,13 @@
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
              xmlns:local="clr-namespace:Project_XLT.Components"
              xmlns:cc="clr-namespace:Project_XLT.CustomControls"
+             xmlns:conv="clr-namespace:Project_XLT.Convertors"
              mc:Ignorable="d" 
              d:DesignHeight="450" d:DesignWidth="800">
     <UserControl.Resources>
         <BitmapImage x:Key="ArrowDownIcon" UriSource="..\..\Images\UI icons\arrowdown.png"/>
+
+        <conv:DateTimeToStringConvertor x:Key="DateTimeToStringConvertor"/>
     </UserControl.Resources>
     <Grid>
         <Border Background="WhiteSmoke" CornerRadius="25">
@@ -34,11 +37,11 @@
                             <StackPanel HorizontalAlignment="Center"
                                         VerticalAlignment="Center"
                                         Orientation="Horizontal">
-                                <TextBlock Text="15 Июля 2024"
+                                <TextBlock Text="{Binding CurrentDateTime, Converter={StaticResource DateTimeToStringConvertor}}"
                                            FontWeight="Bold"
                                            Style="{StaticResource NunitoFontStyle}"
-                                       VerticalAlignment="Center"
-                                       HorizontalAlignment="Center"/>
+                                           VerticalAlignment="Center"
+                                           HorizontalAlignment="Center"/>
                                 <Image Source="{StaticResource ArrowDownIcon}"
                                        Height="15"
                                        Margin="10 0 0 0"

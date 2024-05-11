@@ -40,6 +40,19 @@ namespace Project_XLT.MVVM.ViewModels
                 OnPropertyChanged();
             }
         }
+
+
+        private DateTime _currentDateTime = DateTime.Now;
+        public DateTime CurrentDateTime
+        {
+            get => _currentDateTime;
+            set
+            {
+                _currentDateTime = value;
+                OnPropertyChanged();
+            }
+        }
+
         private int _fats;
         public int Fats
         {
