@@ -21,6 +21,17 @@
     <None Remove="Images\letter.png" />
     <None Remove="Images\MainMenuIcon.png" />
     <None Remove="Images\minus.png" />
+    <None Remove="Images\Navigation Icons\ExitIconBlack.png" />
+    <None Remove="Images\Navigation Icons\ExitIconWhite.png" />
+    <None Remove="Images\Navigation Icons\FinanceIconBlack.png" />
+    <None Remove="Images\Navigation Icons\FinanceIconWhite.png" />
+    <None Remove="Images\Navigation Icons\NutritionIconBlack.png" />
+    <None Remove="Images\Navigation Icons\NutritionIconWhite.png" />
+    <None Remove="Images\Navigation Icons\ProfileIconBlack.png" />
+    <None Remove="Images\Navigation Icons\ProfileIconWhite.png" />
+    <None Remove="Images\Navigation Icons\TrainingsIconBlack.png" />
+    <None Remove="Images\Navigation Icons\TrainingsIconWhite.png" />
+    <None Remove="Images\Nutrition Images\FoodImageExample.jpg" />
     <None Remove="Images\NutritionIcon.png" />
     <None Remove="Images\person.png" />
     <None Remove="Images\picked.png" />
@@ -29,6 +40,10 @@
     <None Remove="Images\search.png" />
     <None Remove="Images\SettingsIcon.png" />
     <None Remove="Images\UserImage.jpg" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="Images\Navigation Icons\FinanceIconBlack.png" />
   </ItemGroup>
 
   <ItemGroup>
@@ -45,21 +60,27 @@
   <ItemGroup>
     <Resource Include="Fonts\Nunito-Font.ttf" />
     <Resource Include="Fonts\Onest-Font.ttf" />
+    <Resource Include="Images\Navigation Icons\ExitIconBlack.png" />
+    <Resource Include="Images\Navigation Icons\ExitIconWhite.png" />
+    <Resource Include="Images\Navigation Icons\FinanceIconWhite.png" />
+    <Resource Include="Images\Navigation Icons\NutritionIconBlack.png" />
+    <Resource Include="Images\Navigation Icons\NutritionIconWhite.png" />
+    <Resource Include="Images\Navigation Icons\ProfileIconBlack.png" />
+    <Resource Include="Images\Navigation Icons\ProfileIconWhite.png" />
+    <Resource Include="Images\Navigation Icons\TrainingsIconBlack.png" />
+    <Resource Include="Images\Navigation Icons\TrainingsIconWhite.png" />
+    <Resource Include="Images\Nutrition Images\FoodImageExample.jpg" />
     <Resource Include="Images\UI icons\arrowdown.png" />
     <Resource Include="Images\Nutrition Images\eat.png" />
-    <Resource Include="Images\Navigation Icons\ExitIcon.png" />
     <Resource Include="Images\UI icons\filter.png" />
     <Resource Include="Images\Nutrition Images\food.jpg" />
     <Resource Include="Images\UI icons\letter.png" />
-    <Resource Include="Images\Navigation Icons\MainMenuIcon.png" />
     <Resource Include="Images\UI icons\minus.png" />
-    <Resource Include="Images\Navigation Icons\NutritionIcon.png" />
     <Resource Include="Images\person.png" />
     <Resource Include="Images\UI icons\picked.png" />
     <Resource Include="Images\UI icons\plus.png" />
     <Resource Include="Images\UI icons\plus150.png" />
     <Resource Include="Images\UI icons\search.png" />
-    <Resource Include="Images\Navigation Icons\SettingsIcon.png" />
     <Resource Include="Images\UserImage.jpg" />
   </ItemGroup>
 

@@ -9,6 +9,7 @@
     <UserControl.Resources>
         <BitmapImage x:Key="ButtonFilterImage" UriSource="..\..\Images\UI icons\filter.png"/>
         <BitmapImage x:Key="SearchIcon" UriSource="..\..\Images\UI icons\search.png"/>
+        <BitmapImage x:Key="FoodImageExample" UriSource="../../Images/Nutrition Images/FoodImageExample.jpg"/>
     </UserControl.Resources>
     <Grid>
         <Border CornerRadius="25"
@@ -25,7 +26,7 @@
                             <ColumnDefinition Width="*"/>
                             <ColumnDefinition Width="0.7*"/>
                         </Grid.ColumnDefinitions>
-                        
+
                         <!--Title-->
                         <StackPanel Grid.Column="0"
                                     Margin="25 0 0 0"
@@ -48,7 +49,8 @@
                             <TextBox Style="{StaticResource SearchTextBox}"
                                      Width="240"
                                      FontSize="16"
-                                     Background="LightGray"/>
+                                     Background="LightGray"
+                                     Text="{Binding SearchRecipeFieldText, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}"/>
                             <!--Filter Button-->
                             <Button Tag="{StaticResource ButtonFilterImage}"
                                     Background="Transparent"
@@ -59,34 +61,46 @@
                         </StackPanel>
                     </Grid>
                 </Border>
-                
+
                 <!--Content-->
                 <ScrollViewer Grid.Row="1"
                               VerticalScrollBarVisibility="Hidden"
                               Margin="20 0 20 10">
-                    <ItemsControl ItemsSource="{Binding EatenFoodList}">
+                    <ItemsControl ItemsSource="{Binding Recipes}">
                         <ItemsControl.ItemTemplate>
                             <DataTemplate>
                                 <Border BorderThickness="0 2 0 0"
-                                        BorderBrush="LightGray">
+                                        BorderBrush="LightGray" Background="WhiteSmoke"
+                                        Height="80">
                                     <Grid>
                                         <Grid.ColumnDefinitions>
-                                            <ColumnDefinition Width="60"/>
+                                            <ColumnDefinition Width="120"/>
                                             <ColumnDefinition Width="*"/>
                                         </Grid.ColumnDefinitions>
 
-                                        <Image Grid.Column="0" Margin="5" Source="{Binding Image}"/>
+                                        <Image Grid.Column="0" Stretch="Fill" Margin="5" Source="{StaticResource FoodImageExample}">
+                                            <Image.Effect>
+                                                <DropShadowEffect Opacity="1"
+                                                                  BlurRadius="10"
+                                                                  ShadowDepth="0"/>
+                                            </Image.Effect>
+                                        </Image>
 
                                         <StackPanel Orientation="Vertical"
                                                     VerticalAlignment="Center"
                                                     Grid.Column="1"
-                                                    Margin="5 0 0 0">
+                                                    Margin="10 0 0 0">
                                             <TextBlock Text="{Binding Title}"
                                                        FontSize="16"
                                                        FontWeight="Bold"
                                                        FontFamily="/Fonts/#Nunito Font"/>
-                                            <TextBlock Text="{Binding BJUStatictis}"
+                                            <TextBlock Text="{Binding Description}"
+                                                       FontSize="14"
+                                                       TextWrapping="Wrap"
+                                                       FontFamily="/Fonts/#Nunito Font"/>
+                                            <TextBlock Text="{Binding BJUStatistic}"
                                                        FontSize="12"
+                                                       Foreground="Gray"
                                                        FontFamily="/Fonts/#Nunito Font"/>
                                         </StackPanel>
                                     </Grid>

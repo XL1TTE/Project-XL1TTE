@@ -101,9 +101,15 @@
                                                 <!--Diet Image-->
                                                 <Border Grid.Column="0">
                                                     <Ellipse VerticalAlignment="Center"
-                                 HorizontalAlignment="Center"
-                                 Width="160"
-                                 Height="160">
+                                                             HorizontalAlignment="Center"
+                                                             Width="160"
+                                                             Height="160">
+                                                        <Ellipse.Effect>
+                                                            <DropShadowEffect Opacity="1"
+                                                                              ShadowDepth="0"
+                                                                              BlurRadius="10"/>
+
+                                                        </Ellipse.Effect>
                                                         <Ellipse.Fill>
                                                             <ImageBrush ImageSource="{StaticResource FoodImage}"/>
                                                         </Ellipse.Fill>
@@ -151,10 +157,10 @@
                                                                                         <Grid HorizontalAlignment="Center"
                                                                   VerticalAlignment="Center">
                                                                                             <Image Source="{Binding Tag, RelativeSource={RelativeSource TemplatedParent}}"
-                                                                        HorizontalAlignment="Center"
-                                                                        VerticalAlignment="Center"
-                                                                        IsHitTestVisible="False"
-                                                                       x:Name="PART_Image"/>
+                                                                                                    HorizontalAlignment="Center"
+                                                                                                    VerticalAlignment="Center"
+                                                                                                    IsHitTestVisible="False"
+                                                                                                   x:Name="PART_Image"/>
                                                                                         </Grid>
                                                                                     </Border>
                                                                                 </Grid>

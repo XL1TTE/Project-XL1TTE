@@ -9,10 +9,21 @@
              mc:Ignorable="d" 
              d:DesignHeight="450" d:DesignWidth="180">
     <UserControl.Resources>
-        <BitmapImage x:Key="MainPageImage" UriSource="..\..\Images\Navigation Icons\MainMenuIcon.png" />
-        <BitmapImage x:Key="NutritionPageImage" UriSource="..\..\Images\Navigation Icons\NutritionIcon.png" />
-        <BitmapImage x:Key="MenagmentPageImage" UriSource="..\..\Images\Navigation Icons\SettingsIcon.png" />
-        <BitmapImage x:Key="ExitPageImage" UriSource="..\..\Images\Navigation Icons\ExitIcon.png" />
+        <!--Profile Icons-->
+        <BitmapImage x:Key="ProfilePageImageBlack" UriSource="..\..\Images\Navigation Icons\ProfileIconBlack.png" />
+        <BitmapImage x:Key="ProfilePageImageWhite" UriSource="..\..\Images\Navigation Icons\ProfileIconWhite.png" />
+        <!--Finance Icons-->
+        <BitmapImage x:Key="FinancePageImageBlack" UriSource="..\..\Images\Navigation Icons\FinanceIconBlack.png" />
+        <BitmapImage x:Key="FinancePageImageWhite" UriSource="..\..\Images\Navigation Icons\FinanceIconWhite.png" />
+        <!--Nutrition Icons-->
+        <BitmapImage x:Key="NutritionPageImageBlack" UriSource="..\..\Images\Navigation Icons\NutritionIconBlack.png" />
+        <BitmapImage x:Key="NutritionPageImageWhite" UriSource="..\..\Images\Navigation Icons\NutritionIconWhite.png" />
+        <!--Training Icons-->
+        <BitmapImage x:Key="TrainingsPageImageBlack" UriSource="..\..\Images\Navigation Icons\TrainingsIconBlack.png" />
+        <BitmapImage x:Key="TrainingsPageImageWhite" UriSource="..\..\Images\Navigation Icons\TrainingsIconWhite.png" />
+        <!--Exit Icons-->
+        <BitmapImage x:Key="ExitImageWhite" UriSource="..\..\Images\Navigation Icons\ExitIconWhite.png" />
+        <BitmapImage x:Key="ExitImageBlack" UriSource="..\..\Images\Navigation Icons\ExitIconBlack.png" />
     </UserControl.Resources>
     <Border Background="White" CornerRadius="15">
         <Grid>
@@ -25,34 +36,45 @@
             </Grid>
             <Grid Grid.Row="1">
                 <StackPanel>
-                    <cc:NavigationRadioButton Content="Главная" 
-                             Height="30"
-                             Margin="10"
-                             Icon="{StaticResource MainPageImage}"
-                             IsChecked="True"
-                             Command="{Binding NavigateToMainMenu}"
-                             Style="{StaticResource NavigationPanelButtonStyle}"/>
+                    <cc:NavigationRadioButton Content="Профиль" 
+                                             Height="30"
+                                             Margin="10"
+                                             IsChecked="True"                                                                                          
+                                             Command="{Binding NavigateToMainMenu}"
+                                             Style="{StaticResource NavigationPanelButtonStyle}"
+                                             IconWhenChecked="{StaticResource ProfilePageImageWhite}"
+                                             IconWhenUnChecked="{StaticResource ProfilePageImageBlack}">
+                    </cc:NavigationRadioButton>
 
-                    <cc:NavigationRadioButton  Content="Диеты" 
-                             Height="30"
-                             Margin="10"
-                             Icon="{StaticResource MenagmentPageImage}"
-                             Command="{Binding NavigateToDietMenu}"
-                             Style="{StaticResource NavigationPanelButtonStyle}"/>
+                    <cc:NavigationRadioButton  Content="Финансы" 
+                                               Height="30"
+                                               Margin="10"
+                                               Style="{StaticResource NavigationPanelButtonStyle}"
+                                               IconWhenChecked="{StaticResource FinancePageImageWhite}"
+                                               IconWhenUnChecked="{StaticResource FinancePageImageBlack}"/>
 
                     <cc:NavigationRadioButton Content="Питание" 
-                             Height="30"
-                             Margin="10"
-                             Icon="{StaticResource NutritionPageImage}"
-                             Command="{Binding NavigateToNutrition}"
-                             Style="{StaticResource NavigationPanelButtonStyle}"/>
+                                              Height="30"
+                                              Margin="10"
+                                              Command="{Binding NavigateToNutrition}"
+                                              Style="{StaticResource NavigationPanelButtonStyle}"
+                                              IconWhenChecked="{StaticResource NutritionPageImageWhite}"
+                                              IconWhenUnChecked="{StaticResource NutritionPageImageBlack}"/>
+
+                    <cc:NavigationRadioButton Content="Тренировки" 
+                                              Height="30"
+                                              Margin="10"
+                                              Style="{StaticResource NavigationPanelButtonStyle}"
+                                              IconWhenChecked="{StaticResource TrainingsPageImageWhite}"
+                                              IconWhenUnChecked="{StaticResource TrainingsPageImageBlack}"/>
 
                     <cc:NavigationRadioButton Content="Выход" 
-                             Height="30"
-                             Margin="10"
-                             Icon="{StaticResource ExitPageImage}"
-                             Command="{Binding ExitCommand}"
-                             Style="{StaticResource NavigationPanelButtonStyle}"/>
+                                              Height="30"
+                                              Margin="10"
+                                              Command="{Binding ExitCommand}"
+                                              Style="{StaticResource NavigationPanelButtonStyle}"
+                                              IconWhenChecked="{StaticResource ExitImageWhite}"
+                                              IconWhenUnChecked="{StaticResource ExitImageBlack}"/>
                 </StackPanel>
             </Grid>
         </Grid>
