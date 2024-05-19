@@ -13,55 +13,55 @@ using Newtonsoft.Json;
 using System.IO;
 using Project_XLT.FireBase;
 using System.Threading.Tasks;
+using System.Data;
 
 namespace Project_XLT
 {
 
     public partial class App : Application
     {
-        private readonly IHost _host;
+        private readonly IServiceCollection _services;
+        private readonly IServiceProvider _serviceProvider;
         public App()
         {
-            _host = Host
-                .CreateDefaultBuilder()
-                .ConfigureServices((context, services) =>
+            _services = new ServiceCollection();
+
+            _services.AddSingleton<MainWindow>(provider => new MainWindow { DataContext = provider.GetRequiredService<MainWindowViewModel>() });
+
+            _services.AddSingleton<MainWindowViewModel>();
+            _services.AddSingleton<NutritionViewModel>();
+            _services.AddSingleton<MainMenuViewModel>();
+            _services.AddSingleton<GeneralViewModel>();
+            _services.AddSingleton<DietListViewModel>();
+
+            _services.AddSingleton<InavigationService, NavigationService>();
+
+            _services.AddSingleton<Func<Type, ViewModelBase>>(provider => viewModelType => (ViewModelBase)provider.GetRequiredService(viewModelType));
+
+            // Custom Services
+            _services.AddSingleton<PeoplesDataBase>();
+            _services.AddSingleton<DietBaseModel>();
+            // FireBaseAuthConfiguration
+            _services.AddSingleton(new FirebaseAuthClient(new FirebaseAuthConfig
+            {
+                ApiKey = "AIzaSyAQA4nl2Jkw7Ah7SIJevhGRj1z6GDx21cw",
+                AuthDomain = "op6-test.firebaseapp.com",
+                Providers = new FirebaseAuthProvider[]
                 {
-                    services.AddSingleton<MainWindow>(provider => new MainWindow { DataContext = provider.GetRequiredService<MainWindowViewModel>() });
+                    new EmailProvider(),
+                }
+            }));
+            _services.AddSingleton<IAuthService, FireBaseAuthService>();
 
-                    services.AddSingleton<MainWindowViewModel>();
-                    services.AddSingleton<NutritionViewModel>();
-                    services.AddSingleton<MainMenuViewModel>();
-                    services.AddSingleton<GeneralViewModel>();
-                    services.AddSingleton<DietListViewModel>();
-
-                    services.AddSingleton<InavigationService, NavigationService>();
-
-                    services.AddSingleton<Func<Type, ViewModelBase>>(provider => viewModelType => (ViewModelBase)provider.GetRequiredService(viewModelType));
-
-                    // Custom Services
-                    services.AddSingleton<PeoplesDataBase>();
-                    services.AddSingleton<DietBaseModel>();
-                    // FireBaseAuthConfiguration
-                    services.AddSingleton(new FirebaseAuthClient(new FirebaseAuthConfig
-                    {
-                        ApiKey = "op6-test.firebaseapp.com",
-                        AuthDomain = "AIzaSyAQA4nl2Jkw7Ah7SIJevhGRj1z6GDx21cw",
-                        Providers = new FirebaseAuthProvider[]
-                        {
-                            new EmailProvider(),
-                        }
-                    }));
-                    services.AddSingleton<IAuthService, FireBaseAuthService>();
-
-                })
-                .Build();
-
+            _serviceProvider = _services.BuildServiceProvider();
         }
 
-        protected override void OnStartup(StartupEventArgs e)
+        protected override  void OnStartup(StartupEventArgs e)
         {
-            var MainWindow = _host.Services.GetRequiredService<MainWindow>();
+            var MainWindow = _serviceProvider.GetRequiredService<MainWindow>();
+
             MainWindow.Show();
+
             base.OnStartup(e);
         }
     }

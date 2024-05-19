@@ -6,7 +6,8 @@
              xmlns:local="clr-namespace:Project_XLT.MVVM.View"
              mc:Ignorable="d" 
              d:DesignHeight="450" d:DesignWidth="800">
-    <Grid Background="Red">
-        <TextBlock Text="{Binding Test}"/>
+    <Grid>
+        <Image Source="{StaticResource ProfileImageBlack}" HorizontalAlignment="Center" VerticalAlignment="Center"
+               Height="80"/>
     </Grid>
 </UserControl>

@@ -3,4 +3,5 @@
     <BitmapImage x:Key="SearchIcon" UriSource="..\..\Images\UI icons\search.png"/>
     <BitmapImage x:Key="DeleteIcon" UriSource="..\..\Images\UI icons\minus.png"/>
     <BitmapImage x:Key="AddIcon" UriSource="..\..\Images\UI icons\plus.png"/>
+    <BitmapImage x:Key="ProfileImageBlack" UriSource="\Images\Navigation Icons\ProfileIconBlack.png" />
 </ResourceDictionary>

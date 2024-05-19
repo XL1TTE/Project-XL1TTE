@@ -11,14 +11,21 @@ namespace Project_XLT.CustomControls
 {
     public class NavigationRadioButton: RadioButton
     {
-        public BitmapImage Icon
+        public BitmapImage IconWhenChecked
         {
-            get { return ((BitmapImage)GetValue(IconProperty)); }
-            set { SetValue(IconProperty, value); }
+            get { return ((BitmapImage)GetValue(IconWhenCheckedProperty)); }
+            set { SetValue(IconWhenCheckedProperty, value); }
+        }
+        public BitmapImage IconWhenUnChecked
+        {
+            get { return ((BitmapImage)GetValue(IconWhenUnCheckedProperty)); }
+            set { SetValue(IconWhenUnCheckedProperty, value); }
         }
 
-        public static readonly DependencyProperty IconProperty =
-            DependencyProperty.Register("Icon", typeof(BitmapImage), typeof(NavigationRadioButton));
+        public static readonly DependencyProperty IconWhenCheckedProperty =
+            DependencyProperty.Register("IconWhenChecked", typeof(BitmapImage), typeof(NavigationRadioButton));
+        public static readonly DependencyProperty IconWhenUnCheckedProperty =
+            DependencyProperty.Register("IconWhenUnChecked", typeof(BitmapImage), typeof(NavigationRadioButton));
 
 
         static NavigationRadioButton()

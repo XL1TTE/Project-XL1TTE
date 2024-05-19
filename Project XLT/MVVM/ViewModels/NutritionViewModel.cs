@@ -176,6 +176,18 @@ namespace Project_XLT.MVVM.ViewModels
                 FoodListToViewUpdate();
             }
         }
+        private string _searchRecipeFieldText = "";
+        public string SearchRecipeFieldText
+        {
+            get => _searchFoodFieldText;
+            set
+            {
+                _searchFoodFieldText = value;
+                OnPropertyChanged();
+                RecipesListToViewUpdate();
+            }
+        }
+        
 
         private Visibility _isFoodListVisible;
         public Visibility IsFoodListVisible
@@ -214,6 +226,19 @@ namespace Project_XLT.MVVM.ViewModels
         }
 
 
+        private ObservableCollection<RecipeModel> _recipes;
+        public ObservableCollection<RecipeModel> Recipes
+        {
+            get => _recipes;
+            set
+            {
+                _recipes = value;
+                OnPropertyChanged();
+            }
+        }
+
+
+
 
         public RelayCommand OpenSearchPopup { get; set; }
         public RelayCommand OpenFoodListPopup { get; set; }
@@ -221,7 +246,7 @@ namespace Project_XLT.MVVM.ViewModels
         public RelayCommand RemoveFoodCommand { get; set; }
         public RelayCommand EatAllFood { get;set; }
         public RelayCommand ShowDietsListCommand { get; set; }
-
+        public RelayCommand NavigateToDietMenu { get; set; }
         public NutritionViewModel(InavigationService navigation, PeoplesDataBase peoples, DietBaseModel dietBaseModel)
         {
             Navigation = navigation;
@@ -234,11 +259,14 @@ namespace Project_XLT.MVVM.ViewModels
 
             DietBaseModel = dietBaseModel;
 
+            NavigateToDietMenu = new RelayCommand(o => { Navigation.GeneralNavigateTo<DietListViewModel>(); }, o => true);        
+
             OpenSearchPopup = new RelayCommand(o => { IsSearchPopup = (IsSearchPopup ? false : true); }, o => true);
 
             OpenFoodListPopup = new RelayCommand(o => { IsFoodListVisible = (IsFoodListVisible == Visibility.Visible ? Visibility.Collapsed : Visibility.Visible); 
             }, o => true);
 
+            Recipes = RecipeDataBase.Recipes;
 
             //Food Commands
             AddFoodCommand = new RelayCommand(o =>
@@ -278,7 +306,7 @@ namespace Project_XLT.MVVM.ViewModels
             Water = 75;
             Proteins = 100;
             Carbs = 33;
-            Vitamins = 10;
+            Vitamins = 20;
             Fats = 87;
 
         }
@@ -305,7 +333,7 @@ namespace Project_XLT.MVVM.ViewModels
             ObservableCollection<Person> DataTemp = new ObservableCollection<Person>();
             foreach (Person person in Data)
             {
-                if (person.Name.Contains(SearchPeopleFieldText))
+                if (person.Name.ToLower().Contains(SearchPeopleFieldText.ToLower()))
                 {
                     DataTemp.Add(person);
                 }
@@ -319,7 +347,7 @@ namespace Project_XLT.MVVM.ViewModels
             ObservableCollection<Product> DataTemp = new ObservableCollection<Product>();
             foreach (Product product in Data)
             {
-                if (product.Title.Contains(SearchFoodFieldText))
+                if (product.Title.ToLower().Contains(SearchFoodFieldText.ToLower()))
                 {
                     DataTemp.Add(product);
                 }
@@ -327,5 +355,18 @@ namespace Project_XLT.MVVM.ViewModels
             FoodList = DataTemp;
         }
 
+        private void RecipesListToViewUpdate()
+        {
+            ObservableCollection<RecipeModel> Data = RecipeDataBase.Recipes;
+            ObservableCollection<RecipeModel> DataTemp = new ObservableCollection<RecipeModel>();
+            foreach (RecipeModel recipe in Data)
+            {
+                if (recipe.Title.ToLower().Contains(SearchRecipeFieldText.ToLower()))
+                {
+                    DataTemp.Add(recipe);
+                }
+            }
+            Recipes = DataTemp;
+        }
     }
 }

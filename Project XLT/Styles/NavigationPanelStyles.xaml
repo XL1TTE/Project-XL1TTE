@@ -9,12 +9,14 @@
                 <Setter.Value>
 
                     <ControlTemplate TargetType="cc:NavigationRadioButton">
-                        
+
                         <Border CornerRadius="15"
                                     Height="30"
                                 Background="{TemplateBinding Property=Background}">
                             <StackPanel Orientation="Horizontal">
-                                <Image Source="{TemplateBinding Icon}" 
+                                <Image
+                                       Source="{TemplateBinding IconWhenUnChecked}"
+                                       x:Name="Icon"
                                        Height="24"
                                        Width="24"
                                        Stretch="Fill"
@@ -27,7 +29,14 @@
                                        Margin="25 0 0 0"/>
                             </StackPanel>
                         </Border>
-
+                        <ControlTemplate.Triggers>
+                            <Trigger Property="IsChecked" Value="True">
+                                <Setter TargetName="Icon" Property="Source" Value="{Binding IconWhenChecked, RelativeSource={RelativeSource TemplatedParent}}"/>
+                            </Trigger>
+                            <Trigger Property="IsChecked" Value="False">
+                                <Setter TargetName="Icon" Property="Source" Value="{Binding IconWhenUnChecked, RelativeSource={RelativeSource TemplatedParent}}"/>
+                            </Trigger>
+                        </ControlTemplate.Triggers>
                     </ControlTemplate>
                 </Setter.Value>
             </Setter>

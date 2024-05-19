@@ -14,7 +14,6 @@
                                     <ColumnDefinition Width="40"/>
                                 </Grid.ColumnDefinitions>
                                 
-                                <!--Typing State Stick-->
                                 <Rectangle StrokeThickness="1"/>
                                 
                                 <!--Text Box-->
@@ -30,7 +29,7 @@
                                          x:Name="_TextBox"/>
                                 
                                 <!--Type Tip Box-->
-                                <TextBlock Text="Search"
+                                <TextBlock Text="Поиск"
                                            IsHitTestVisible="False"
                                            VerticalAlignment="Center"
                                            HorizontalAlignment="Center"

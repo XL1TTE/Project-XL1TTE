@@ -4,6 +4,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Windows;
 
 namespace Project_XLT.Services
 {
@@ -25,8 +26,16 @@ namespace Project_XLT.Services
 
         public async Task<User> LogIn(string mail, string password)
         {
-            var UserCredentials = await AuthClient.SignInWithEmailAndPasswordAsync(mail, password);
-            return UserCredentials.User;
+            try
+            {
+                var UserCredentials = await AuthClient.SignInWithEmailAndPasswordAsync(mail, password);
+                return UserCredentials.User;
+            }
+            catch
+            {
+                MessageBox.Show("Пользователь с такими данными не найден!");
+                return null;
+            }
         }
 
         public void LogOut()
@@ -36,8 +45,17 @@ namespace Project_XLT.Services
 
         public async Task<User> Register(string mail, string password)
         {
-            var UserCredentials = await AuthClient.CreateUserWithEmailAndPasswordAsync(mail, password);
-            return UserCredentials.User;
+            try
+            {
+                var UserCredentials = await AuthClient.CreateUserWithEmailAndPasswordAsync(mail, password);
+                return UserCredentials.User;
+            }
+            catch
+            {
+                MessageBox.Show("Пользователь с такимми данными уже существует!");
+                return null;
+            }
+
         }
     }
 }
